@@ -1,0 +1,100 @@
+<?php
+
+/**
+ * Implements hook_services_resources().
+ */
+function thegreatnykz_services_resources() {
+  $resources = array();
+
+  $resources['nykzuser'] = array('operations' => array(),'actions' => array(),);
+  $resources['nykzboard'] = array('operations' => array(),'actions' => array(),);
+
+  return $resources;
+}
+
+// implements hook_permission
+function thegreatnykz_permission() {
+  return array(
+    'nykzbasic' => array(
+      'title' => t('普通用户权限'),
+      'description' => t('普通用户权限'),
+    ),
+  );
+}
+
+// implements hook_enable
+function thegreatnykz_enable(){
+  if (!field_info_field('field_udid')) {
+    # 存储用户的udid
+    $field = array('field_name' => 'field_udid', 'type' => 'text','cardinality' => FIELD_CARDINALITY_UNLIMITED);
+    $field = field_create_field($field);
+    # Create the instance on the bundle.
+    $instance = array(
+      'field_name' => $field['field_name'],
+      'entity_type' => 'user',
+      'bundle' => 'user',
+      'label' => 'udid',
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => 1,
+      ),
+      'widget' => array(
+        'type' => 'textfield',
+      ),
+    );
+    field_create_instance($instance);
+    drupal_set_message($field['field_name'].' was created.');
+  }
+  if (!field_info_field('field_uploads')) {
+    # 存储用户上传的文件名
+    $field = array('field_name' => 'field_uploads', 'type' => 'text','cardinality' => FIELD_CARDINALITY_UNLIMITED);
+    $field = field_create_field($field);
+    $instance = array(
+      'field_name' => $field['field_name'],
+      'entity_type' => 'user',
+      'bundle' => 'user',
+      'label' => 'udid',
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => 1,
+      ),
+      'widget' => array(
+        'type' => 'textfield',
+      ),
+    );
+    field_create_instance($instance);
+    drupal_set_message($field['field_name'].' was created.');
+  }
+
+  if(!in_array("nykzuser", user_roles())){
+    // 权限：普通用户
+    $role = new stdClass();
+    $role->name = 'nykzuser';
+    $role->weight = 3;
+    user_role_save($role);
+    user_role_grant_permissions($role->rid,array(
+      'read privatemsg',
+      'write privatemsg',
+      'delete privatemsg',
+      'reply only privatemsg',
+      'select text format for privatemsg',
+      'nykzbasic',
+      ));
+  }
+  if(!in_array("boardmaster", user_roles())){
+    // 权限：板主
+    $role = new stdClass();
+    $role->name = 'boardmaster';
+    $role->weight = 4;
+    user_role_save($role);
+  }
+  if(!in_array("god", user_roles())){
+    // 权限：站长
+    $role = new stdClass();
+    $role->name = 'god';
+    $role->weight = 5;
+    user_role_save($role);
+  }
+}

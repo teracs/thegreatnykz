@@ -1,0 +1,13 @@
+name = The Great Nykz
+description = Provides API on Firebird based on Drupal Services module
+package = Nykz
+core = 7.x
+dependencies[] = services
+dependencies[] = privatemsg
+dependencies[] = oauth_common_providerui
+dependencies[] = services_oauth
+dependencies[] = rest_server
+dependencies[] = entity
+
+files[] = thegreatnykz.module
+
