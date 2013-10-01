@@ -1,0 +1,56 @@
+#-.-coding:utf-8-.-
+PERM_BASIC      = 000001
+PERM_CHAT       = 000002
+PERM_PAGE       = 000004
+PERM_POST       = 000010
+PERM_LOGINOK    = 000020
+PERM_666LIFE    = 000040
+PERM_CLOAK      = 000100
+PERM_SEECLOAK   = 000200
+PERM_XEMPT      = 000400
+PERM_WELCOME    = 001000
+PERM_BOARDS     = 002000
+PERM_ACCOUNTS   = 004000
+PERM_CHATCLOAK  = 010000
+PERM_OVOTE      = 020000
+PERM_SYSOP      = 040000
+PERM_POSTMASK   = 0100000
+PERM_HONOR      = 0200000
+PERM_OBOARDS    = 0400000
+PERM_ACBOARD   	= 01000000
+PERM_NOZAP      = 02000000
+PERM_FORCEPAGE  = 04000000
+PERM_EXT_IDLE   = 010000000
+PERM_MESSAGE    = 020000000
+PERM_ACHATROOM  = 040000000
+PERM_ARBITRATOR = 0100000000
+PERM_MAILINFINITY = 0200000000
+PERM_PERSONAL     = 0400000000
+PERM_SPECIAL6     = 01000000000
+PERM_SPECIAL7     = 02000000000
+PERM_SPECIAL8     = 04000000000
+PERM_SPECIAL9     = 0x40000000       #add by quickmouse
+PERM_SPECIALT     = 0x80000000
+
+def levels(lv=0):
+	lvl = []
+        if lv & PERM_BASIC:
+		lvl.append("普通站友")
+        if lv & PERM_BOARDS:
+		lvl.append("板主")
+        if lv & PERM_666LIFE:
+		lvl.append("666生命力")
+        if lv & PERM_XEMPT:
+		lvl.append("永久帐号")
+        if lv & PERM_CHATCLOAK:
+		lvl.append("本站智囊")
+        if lv & PERM_MAILINFINITY:
+		lvl.append("无限大邮箱")
+        if lv & PERM_ACCOUNTS:
+		lvl.append("账号管理员")
+        if lv & PERM_SYSOP:
+		lvl.append("本站站长")
+
+
+	return lvl
+
