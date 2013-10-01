@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/sjtubbs/!svn/ver/2299/test/fb2k
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/install.sh
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/Makefile.in
+END
+Readme.FB2000
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/Readme.FB2000
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/ChangeLog
+END
+BUG_REPORT
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/BUG_REPORT
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/COPYRIGHT
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/config.guess
+END
+configure.inf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/1903/test/fb2k/configure.inf
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/config.sub
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sjtubbs/!svn/ver/1903/test/fb2k/Makefile
+END

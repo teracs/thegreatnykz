@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/doc/example
+END
+sendmail.cf
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/doc/example/sendmail.cf
+END
+cron.bbs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/doc/example/cron.bbs
+END
+00README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/doc/example/00README
+END
+expire.ctl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/doc/example/expire.ctl
+END
+startbbs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1865/test/fb2k/doc/example/startbbs.sh
+END

@@ -1,0 +1,725 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives
+END
+patch-log_params.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-log_params.sql
+END
+patch-image_name_primary.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-image_name_primary.sql
+END
+patch-restructure.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-restructure.sql
+END
+patch-user_editcount.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_editcount.sql
+END
+rebuildRecentchanges.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/rebuildRecentchanges.inc
+END
+patch-filearhive-user-index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-filearhive-user-index.sql
+END
+patch-oldimage-user-index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-oldimage-user-index.sql
+END
+patch-rc-patrol.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc-patrol.sql
+END
+patch-querycacheinfo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-querycacheinfo.sql
+END
+patch-rc_type.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc_type.sql
+END
+patch-userindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-userindex.sql
+END
+patch-log_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-log_deleted.sql
+END
+patch-archive-page_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-archive-page_id.sql
+END
+patch-logging-times-index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-logging-times-index.sql
+END
+patch-job.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-job.sql
+END
+patch-templatelinks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-templatelinks.sql
+END
+patch-user_groups.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_groups.sql
+END
+patch-ss_total_articles.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ss_total_articles.sql
+END
+patch-externallinks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-externallinks.sql
+END
+patch-querycachetwo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-querycachetwo.sql
+END
+patch-random-dateindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-random-dateindex.sql
+END
+patch-bot.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-bot.sql
+END
+patch-hitcounter.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-hitcounter.sql
+END
+patch-ar_parent_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ar_parent_id.sql
+END
+patch-userlevels.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-userlevels.sql
+END
+patch-validate.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-validate.sql
+END
+upgradeLogging.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/upgradeLogging.php
+END
+patch-objectcache.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-objectcache.sql
+END
+patch-interwiki-trans.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-interwiki-trans.sql
+END
+patch-inverse_timestamp.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-inverse_timestamp.sql
+END
+patch-backlinkindexes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-backlinkindexes.sql
+END
+patch-user_rights.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_rights.sql
+END
+patch-ar_len.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ar_len.sql
+END
+populateSha1.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/populateSha1.php
+END
+patch-rename-user_groups-and_rights.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rename-user_groups-and_rights.sql
+END
+patch-image-user-index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-image-user-index.sql
+END
+patch-email-authentication.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-email-authentication.sql
+END
+patch-logging-title.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-logging-title.sql
+END
+patch-interwiki.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-interwiki.sql
+END
+patch-categorylinksindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-categorylinksindex.sql
+END
+patch-user_nameindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_nameindex.sql
+END
+patch-oi_metadata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-oi_metadata.sql
+END
+patch-pt_title-encoding.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-pt_title-encoding.sql
+END
+patch-page_len.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-page_len.sql
+END
+patch-ss_images.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ss_images.sql
+END
+patch-rc_user_text-index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc_user_text-index.sql
+END
+patch-protected_titles.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-protected_titles.sql
+END
+patch-categorylinks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-categorylinks.sql
+END
+patch-rc_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc_id.sql
+END
+patch-rev_parent_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rev_parent_id.sql
+END
+patch-ipb_optional_autoblock.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipb_optional_autoblock.sql
+END
+patch-page_restrictions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-page_restrictions.sql
+END
+patch-user_last_timestamp.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_last_timestamp.sql
+END
+patch-user_email_token.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_email_token.sql
+END
+patch-linkscc.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-linkscc.sql
+END
+patch-archive-rev_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-archive-rev_id.sql
+END
+patch-ar_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ar_deleted.sql
+END
+patch-profiling.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-profiling.sql
+END
+patch-querycache.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-querycache.sql
+END
+patch-rev_len.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rev_len.sql
+END
+patch-rc_ip.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc_ip.sql
+END
+patch-user_newpass_time.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_newpass_time.sql
+END
+patch-log_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-log_id.sql
+END
+patch-searchindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-searchindex.sql
+END
+patch-page_props.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-page_props.sql
+END
+patch-user-realname.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user-realname.sql
+END
+patch-redirect.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-redirect.sql
+END
+patch-rc_len.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc_len.sql
+END
+patch-cache.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-cache.sql
+END
+patch-page_restrictions_sortkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-page_restrictions_sortkey.sql
+END
+patch-ipblocks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipblocks.sql
+END
+patch-ipb_by_text.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipb_by_text.sql
+END
+patch-mimesearch-indexes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-mimesearch-indexes.sql
+END
+patch-ipb_expiry.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipb_expiry.sql
+END
+patch-watchlist-null.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-watchlist-null.sql
+END
+patch-email-notification.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-email-notification.sql
+END
+patch-img_width.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-img_width.sql
+END
+patch-transcache.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-transcache.sql
+END
+patch-fa_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-fa_deleted.sql
+END
+patch-img_media_type.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-img_media_type.sql
+END
+patch-img_metadata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-img_metadata.sql
+END
+patch-rev_text_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rev_text_id.sql
+END
+patch-archive-text_id.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-archive-text_id.sql
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/.htaccess
+END
+patch-parsercache.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-parsercache.sql
+END
+patch-oldestindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-oldestindex.sql
+END
+patch-rev_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rev_deleted.sql
+END
+patch-updatelog.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-updatelog.sql
+END
+patch-linkscc-1.3.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-linkscc-1.3.sql
+END
+patch-logging.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-logging.sql
+END
+patch-ipb_anon_only.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipb_anon_only.sql
+END
+patch-img_exif.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-img_exif.sql
+END
+patch-recentchanges-utindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-recentchanges-utindex.sql
+END
+patch-linktables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-linktables.sql
+END
+patch-image_reditects.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-image_reditects.sql
+END
+patch-img_sha1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-img_sha1.sql
+END
+patch-math.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-math.sql
+END
+patch-rc_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc_deleted.sql
+END
+patch-indexes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-indexes.sql
+END
+patch-profiling-memory.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-profiling-memory.sql
+END
+patch-ipb_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipb_deleted.sql
+END
+patch-drop_img_type.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-drop_img_type.sql
+END
+patch-ipb_emailban.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipb_emailban.sql
+END
+patch-archive-user-index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-archive-user-index.sql
+END
+patch-watchlist.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-watchlist.sql
+END
+patch-ipb_range_start.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-ipb_range_start.sql
+END
+patch-usernewtalk.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-usernewtalk.sql
+END
+patch-drop-user_newtalk.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-drop-user_newtalk.sql
+END
+upgradeWatchlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/upgradeWatchlist.php
+END
+patch-image_name_unique.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-image_name_unique.sql
+END
+patch-trackbacks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-trackbacks.sql
+END
+patch-user_registration.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_registration.sql
+END
+patch-page_no_title_convert.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-page_no_title_convert.sql
+END
+patch-val_ip.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-val_ip.sql
+END
+patch-category.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-category.sql
+END
+patch-pagelinks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-pagelinks.sql
+END
+patch-user_token.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-user_token.sql
+END
+patch-filearchive.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-filearchive.sql
+END
+patch-langlinks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-langlinks.sql
+END
+patch-rc-newindex.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/archives/patch-rc-newindex.sql
+END

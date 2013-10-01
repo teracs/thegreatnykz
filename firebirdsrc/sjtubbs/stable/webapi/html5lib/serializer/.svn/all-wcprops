@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/serializer
+END
+htmlserializer.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/serializer/htmlserializer.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/serializer/__init__.py
+END
+xhtmlserializer.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/serializer/xhtmlserializer.py
+END

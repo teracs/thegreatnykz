@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres
+END
+compare_schemas.pl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/compare_schemas.pl
+END
+tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/tables.sql
+END
+mediawiki_mysql2postgres.pl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/mediawiki_mysql2postgres.pl
+END

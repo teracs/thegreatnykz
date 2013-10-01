@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/lib/libBBS
+END
+html.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/lib/libBBS/html.c
+END
+string.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/lib/libBBS/string.c
+END
+fileio.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/lib/libBBS/fileio.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/lib/libBBS/Makefile
+END
+mmdecode.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/lib/libBBS/mmdecode.c
+END

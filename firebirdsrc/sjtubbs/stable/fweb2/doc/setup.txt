@@ -1,0 +1,77 @@
+本文描述如何安装，使用和调试fweb2
+
+编译前准备：
+1,安装必须的编译环境libfcgi-dev, libglib2.0-dev, libctemplate-dev, cmake, gcc, g++
+2,下载fweb2源文件
+
+
+编译：
+1, 进入fweb2目录
+2, 编译fweb2
+fweb2# mkdir build
+fweb2# cd build
+build# cmake ../
+build# make && make install
+
+指定安装目录，比如
+# cmake -D FWEB_INSTALL_PREFIX=/another/path ../
+默认是安装在/home/bbs/bbshome/httpd/目录下
+
+指定优化选项
+# cmake -D CMAKE_BUILD_TYPE=debug ../
+可选参数有
+Debug: -g
+Release: -O3 -DNDEBU
+RelWithDebInfo: -g -O2 （默认）
+MinSizeRel: -Os -DNDEBUG
+
+
+指定编译参数，请在运行cmake之前
+# export CFLAGS=' -some-flags ' CXXFLAGS=' -some-flags '
+也可以
+# CFLAGS=' -some-flags ' CXXFLAGS=' -some-flags ' cmake ../
+默认的编译参数是：
+-Wall -Wextra -Wno-unused-parameter -pipe
+
+指定编译器，在运行cmake之前
+# export CC=gcc-3.4 CXX=g++-3.4
+也可以
+# CC=gcc-3.4 CXX=g++-3.4  cmake ../
+
+你可以建立多个文件夹，每个文件夹使用不同的参数，方便调试比较
+
+运行：
+fweb2既可以当作fastcgi程序运行，也可以当作cgi程序运行。你可以参考你的http server
+配置文件进行适当的配置。由于fweb2服务于多个URL，当你设置时，应该通过url rewrite的
+方法映射好所有的url。比如在apache中可以大概这么设置：
+
+FastCgiServer /home/bbs/bbshome/httpd/fweb2 -restart-delay 1 -processes 10 -init-start-delay 0 -appConnTimeout 5 -priority 1 -listen-queue-depth 50 -socket /dev/shm/fweb2  -initial-env PATH -initial-env SHELL -initial-env USER
+ScriptAliasMatch ^/bbs(.*) /home/bbs/bbshome/httpd/fweb2
+
+配置的意思是运行 10个fweb2 fastcgi进程，然后映射所有的 /bbs前缀URL到这个fastcgi
+进程中如果只是想简单配置测试环境，可以在apache的cgi-bin目录中增加这样一个shell文
+件fweb.sh
+
+#!/bin/sh
+exec /home/bbs/bbshome/httpd/fweb2
+
+然后增加配置
+ScriptAliasMatch ^/bbs(.*) /usr/lib/cgi-bin/fweb.sh
+上面假设你的cgi-bin目录是/usr/lib/cgi-bin/。这样你就可以测试fweb2了。
+
+配置：
+在运行fweb2之前，你也许需要改一下配置文件fweb.ini。配置方法请参考fweb.ini的注释
+
+调试:
+除了配置一个http服务器进行调试，你还可以进行更简单的调试方法，在utils目录下的
+runcgi.py可以帮助你. runcgi.py不仅仅可以模拟一个cgi环境调用cgi程序，还可以
+调用gdb调试你的程序。比如
+./runcgi.py -c /home/bbs/bbshome/httpd/fweb2 -u /myurl -p name value -a run
+就等同于你在浏览器中http://localhost/myurl?name=value 访问。
+./runcgi.py -c /home/bbs/bbshome/httpd/fweb2 -u /myurl -p name value -a debug
+就会用gdb调用这个cgi程序，然后断点到main函数上。如果你是要调试自己的page processor，
+这时可以断点到invoke_page_proccessor函数上，然后继续运行。等待fweb2装载了所有
+动态链接库，你就可以断点到你自己的page processor函数上，开始调试。
+配合fweb.ini的URL-PageProcessor映射，你可以随意调试哪个函数（当然，这个函数必须
+是符合page processor的原型）。
+runcgi.py还有很多有用的参数，用./runcgi.py -h看每个参数的解释。

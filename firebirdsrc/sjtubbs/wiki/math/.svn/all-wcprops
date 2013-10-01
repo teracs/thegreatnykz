@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/sjtubbs/!svn/ver/1933/wiki/math
+END
+tex.mli
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1933/wiki/math/tex.mli
+END
+texvc_tex.ml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sjtubbs/!svn/ver/1933/wiki/math/texvc_tex.ml
+END
+texvc_cgi.ml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sjtubbs/!svn/ver/1933/wiki/math/texvc_cgi.ml
+END
+html.mli
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sjtubbs/!svn/ver/1933/wiki/math/html.mli
+END
+util.ml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1933/wiki/math/util.ml
+END
+render.ml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1933/wiki/math/render.ml
+END
+.svnignore
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1933/wiki/math/.svnignore
+END
+mathml.ml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1933/wiki/math/mathml.ml
+END
+parser.mly
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1933/wiki/math/parser.mly
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sjtubbs/!svn/ver/1933/wiki/math/README
+END
+texvc_test.ml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/1933/wiki/math/texvc_test.ml
+END
+texvc.ml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sjtubbs/!svn/ver/1933/wiki/math/texvc.ml
+END
+mathml.mli
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1933/wiki/math/mathml.mli
+END
+lexer.mll
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1933/wiki/math/lexer.mll
+END
+texutil.ml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1933/wiki/math/texutil.ml
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/sjtubbs/!svn/ver/1933/wiki/math/TODO
+END
+render_info.mli
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1933/wiki/math/render_info.mli
+END
+html.ml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1933/wiki/math/html.ml
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1933/wiki/math/.htaccess
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sjtubbs/!svn/ver/1933/wiki/math/Makefile
+END
+texutil.mli
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sjtubbs/!svn/ver/1933/wiki/math/texutil.mli
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/1757/beta/fb2k/util/mail2bbs
+END
+tcp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/tcp.pl
+END
+mail2bbs.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/mail2bbs.h
+END
+rfc931.pl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/rfc931.pl
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/Makefile.in
+END
+mailgate.pl.in
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/mailgate.pl.in
+END
+qp_conv.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/qp_conv.c
+END
+bbsmail
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/bbsmail
+END
+mail2bbs.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/mail2bbs.c
+END
+00README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/00README
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1757/beta/fb2k/util/mail2bbs/Makefile
+END
+mailgate.pl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/mailgate.pl
+END
+bbsmail.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/mail2bbs/bbsmail.in
+END

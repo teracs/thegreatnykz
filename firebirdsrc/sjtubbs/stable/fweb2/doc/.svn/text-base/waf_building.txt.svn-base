@@ -1,0 +1,11 @@
+1. configure
+./waf configure --bbshome=/home/bbs/bbshome
+
+2. building
+./waf build
+
+3. install
+./waf install
+
+4, uninstall
+./waf uninstall

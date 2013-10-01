@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1991/stable/fb2k/tools
+END
+forecast.pl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/423/stable/fb2k/tools/forecast.pl
+END
+listkill.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/423/stable/fb2k/tools/listkill.sh
+END
+logintimes.pl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/423/stable/fb2k/tools/logintimes.pl
+END
+bbsstop.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/423/stable/fb2k/tools/bbsstop.sh
+END
+bbsnettop.pl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/423/stable/fb2k/tools/bbsnettop.pl
+END
+generate_wikitext.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/1991/stable/fb2k/tools/generate_wikitext.pl
+END
+bbsbak.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/423/stable/fb2k/tools/bbsbak.sh
+END

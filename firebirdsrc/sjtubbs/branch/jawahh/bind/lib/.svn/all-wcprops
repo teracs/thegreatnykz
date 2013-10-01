@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sjtubbs/!svn/ver/1547/branch/jawahh/bind/lib
+END
+zone.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1440/branch/jawahh/bind/lib/zone.py
+END
+cert.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1439/branch/jawahh/bind/lib/cert.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1439/branch/jawahh/bind/lib/utils.py
+END
+inl.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1440/branch/jawahh/bind/lib/inl.py
+END
+rpc.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1440/branch/jawahh/bind/lib/rpc.py
+END
+conf.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1547/branch/jawahh/bind/lib/conf.py
+END
+db.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/1440/branch/jawahh/bind/lib/db.py
+END

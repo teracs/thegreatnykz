@@ -1,0 +1,18 @@
+
+<html>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel=stylesheet type=text/css href='/file/bbs/bbs.css' />
+<head>
+<title>饮水思源</title>
+</head>
+<frameset name=topframe border=0 frameborder=0 framespacing=2 framemargin=0 cols="150,*">
+    <frame name=f2 framespcing=2 src="bbsleftnew">
+    <frameset id=rframe name=rightframe rows="0, *, 20">
+        <frame scrolling=no marginwidth=4 marginheight=0 framespacing=0 name=fmsg src="bbsgetmsg">
+        <frame framespacing=2 name=f3 src="php/bbsindex2.php">
+        <frame scrolling=no marginwidth=4 marginheight=1 framespacing=1 name=f4 src="bbsfoot">
+    </frameset>
+</frameset>
+</html>
+	

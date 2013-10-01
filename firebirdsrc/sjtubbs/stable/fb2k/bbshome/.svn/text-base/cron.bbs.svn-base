@@ -1,0 +1,69 @@
+# Crontab，请做适当修改以适合您的系统。
+# SHELL=/bin/sh
+
+###### weather predict ######
+5 18 * * *  /usr/bin/perl /home/bbs/bin/forecast.pl
+
+###### 讨论区定时砍信 ###### 保留300 天,最多4000篇, 最少4000篇
+30 2 * * * /home/bbs/bbshome/bin/expire > /dev/null 2>&1
+
+###### 上站人数统计 ######
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /usr/bin/uptime >> /home/bbs/bbshome/reclog/uptime.log
+57 * * * * /home/bbs/bbshome/bin/averun /home/bbs/bbshome/reclog/uptime.log;/bin/rm /home/bbs/bbshome/reclog/uptime.log
+56 0 * * * /bin/cp /home/bbs/bbshome/0Announce/bbslist/today /home/bbs/bbshome/0Announce/bbslist/yesterday; /bin/rm /home/bbs/bbshome/reclog/ave.src
+
+########新增人口统计########
+    58 23 * * * /home/bbs/bbshome/bin/newacct
+    59 23 * * * /bin/mv /home/bbs/bbshome/0Announce/bbslist/newacct.today /home/bbs/bbshome/0Announce/bbslist/newacct.last
+
+####### show bm
+5 0 * * 1 /home/bbs/bbshome/bin/showbm
+
+###### 上站人次统计 ######
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/bbs/bbshome/bin/account
+0 0 * * * /bin/cp /home/bbs/bbshome/0Announce/bbslist/countusr /home/bbs/bbshome/0Announce/bbslist/countusr.last
+
+###### 热门话题 ######
+10 * * * * /home/bbs/bbshome/bin/poststat /home/bbs/bbshome
+
+######bbsinnd and bbsoutd from nju.zhch
+#40 4 * * * /home/bbs/bbshome/bin/bbsinnd;/home/bbs/bbshome/bin/bbsoutd
+
+#Annonce index automaker by romano@8848.net 20010604
+#40 3 * * * /home/bbs/bin/anno_add_all
+#更新精华区索引(测试程序)
+#30 3 * * * /home/bbs/bin/announcelist.sh
+30 3 * * * /home/bbs/bbshome/bin/AnnIndex /home/bbs/bbshome all
+
+#bbswww精华区下载 zipall by romano@8848.net 20010718
+0 2 * * 5 /home/bbs/bin/zxf/zipall.sh
+
+######备份BBS的数据###########
+    0 0 */16 * * /home/bbs/bin/bbsbak.sh log> /dev/null 2>&1
+	0 3 * * * /home/bbs/bin/bbsbak.sh other> /dev/null 2>&1
+	30 1 * * 1 /home/bbs/bin/bbsbak.sh boards> /dev/null 2>&1
+	30 1 * * 2 /home/bbs/bin/bbsbak.sh 0Announce> /dev/null 2>&1
+	30 1 * * 3 /home/bbs/bin/bbsbak.sh home> /dev/null 2>&1
+	30 1 * * 4 /home/bbs/bin/bbsbak.sh mail> /dev/null 2>&1
+
+##  backup the passwd file
+#	0 4 * * * /home/bbs/bin/bbsstop.sh
+#	0 4 * * * rm /home/bbs/bbsbak/other/passwd.old ; mv /home/bbs/bbsbak/other/passwd /home/bbs/bbsbak/other/passwd.old
+##  清除死亡ID
+#	1 3 * * * /home/bbs/bin/CleanID /home/bbs/bbshome/.PASSWDS /home/bbs/bbsbak/other/passwd; cp /home/bbs/bbsbak/other/passwd /home/bbs/bbshome/.PASSWDS
+    30 3 * * * /home/bbs/bbshome/bin/CleanID
+
+###########每日登陆次数排行榜################
+    0 1-23 * * * /home/bbs/bin/logintimes.pl > /home/bbs/bbshome/0Announce/bbslist/logintimes
+
+################网络连接次数排行榜###########
+    0 0 * * * /home/bbs/bin/bbsnettop.pl > /home/bbs/bbshome/0Announce/bbslist/bbsnettop
+
+##############news.cn.*转信###############
+    * * * * * /home/bbs/bbshome/innd/bbslink /home/bbs/bbshome > /dev/null 2>&1
+
+########讨论区使用率统计#######(文字式统计)
+    0 3 * * * /home/bbs/bbshome/bin/usage 0; /home/bbs/bbshome/bin/usage 1
+
+#########  监视系统资源  ############
+   */5 * * * *  /home/bbs/bin/sysinfo.min.sh >> /home/bbs/ServerState/sysinfo.log

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives
+END
+patch-page_restrictions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-page_restrictions.sql
+END
+patch-updatelog.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-updatelog.sql
+END
+patch-revision_rev_user_fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-revision_rev_user_fkey.sql
+END
+patch-profiling.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-profiling.sql
+END
+patch-remove-archive2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-remove-archive2.sql
+END
+patch-rc_cur_id-not-null.sql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-rc_cur_id-not-null.sql
+END
+patch-page_props.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-page_props.sql
+END
+patch-redirect.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-redirect.sql
+END
+patch-page_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-page_deleted.sql
+END
+patch-ipb_address_unique.sql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-ipb_address_unique.sql
+END
+patch-ts2pagetitle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-ts2pagetitle.sql
+END
+patch-pagecontent.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-pagecontent.sql
+END
+patch-mediawiki_version.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-mediawiki_version.sql
+END
+patch-tsearch2funcs.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-tsearch2funcs.sql
+END
+patch-protected_titles.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-protected_titles.sql
+END
+patch-category.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-category.sql
+END
+patch-mwuser.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-mwuser.sql
+END
+patch-querycachetwo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/1933/wiki/maintenance/postgres/archives/patch-querycachetwo.sql
+END

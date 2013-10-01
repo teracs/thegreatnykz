@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express
+END
+express.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/express.h
+END
+bigfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/bigfile.c
+END
+daemon.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/daemon.c
+END
+mmencode.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/mmencode.c
+END
+stuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/stuff.c
+END
+express.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/express.c
+END
+c_express.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/c_express.c
+END
+00README
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/00README
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/util/express/Makefile
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/sjtubbs/!svn/ver/2337/test/fweb2
+END
+cgic_license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/1865/test/fweb2/cgic_license.txt
+END
+cgic.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/cgic.c
+END
+fwebtpl.cc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fwebtpl.cc
+END
+fwebtpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fwebtpl.h
+END
+mempool.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/mempool.c
+END
+cgic.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/cgic.h
+END
+fwebio.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fwebio.c
+END
+mempool.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/mempool.h
+END
+fwebio.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fwebio.h
+END
+fweb.ini
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/2337/test/fweb2/fweb.ini
+END
+fwebhttp.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fwebhttp.c
+END
+fweb.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fweb.c
+END
+fweblog.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fweblog.c
+END
+module.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/module.c
+END
+dispatcher.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/dispatcher.c
+END
+config_reader.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/config_reader.c
+END
+fweb.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fweb.h
+END
+fwebhttp.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fwebhttp.h
+END
+fweblog.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/fweblog.h
+END
+module.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/module.h
+END
+dispatcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/dispatcher.h
+END
+const.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/const.h
+END
+config_reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/config_reader.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1978/test/fweb2/CMakeLists.txt
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sjtubbs/!svn/ver/2306/stable/fweb2/tpl
+END
+foot.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1672/stable/fweb2/tpl/foot.tpl
+END
+topmenu.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2206/stable/fweb2/tpl/topmenu.tpl
+END
+header.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/1638/stable/fweb2/tpl/header.tpl
+END
+error.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/1811/stable/fweb2/tpl/error.tpl
+END
+waphead.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2306/stable/fweb2/tpl/waphead.tpl
+END
+genheader.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1958/stable/fweb2/tpl/genheader.sh
+END
+topmenu.tpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/2200/stable/fweb2/tpl/topmenu.tpl.h
+END
+wscript
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sjtubbs/!svn/ver/2062/stable/fweb2/tpl/wscript
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1683/stable/fweb2/tpl/CMakeLists.txt
+END
+genheader2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/2058/stable/fweb2/tpl/genheader2.sh
+END
+wapfoot.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2139/stable/fweb2/tpl/wapfoot.tpl
+END

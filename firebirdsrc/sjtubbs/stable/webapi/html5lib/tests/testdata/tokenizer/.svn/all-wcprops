@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer
+END
+test2.test
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/test2.test
+END
+test3.test
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/test3.test
+END
+test4.test
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/test4.test
+END
+entities.test
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/entities.test
+END
+xmlViolation.test
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/xmlViolation.test
+END
+numericEntities.test
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/numericEntities.test
+END
+unicodeChars.test
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/unicodeChars.test
+END
+contentModelFlags.test
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/contentModelFlags.test
+END
+pendingSpecChanges.test
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/pendingSpecChanges.test
+END
+namedEntities.test
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/namedEntities.test
+END
+unicodeCharsProblematic.test
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/unicodeCharsProblematic.test
+END
+escapeFlag.test
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/escapeFlag.test
+END
+domjs.test
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/domjs.test
+END
+test1.test
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/html5lib/tests/testdata/tokenizer/test1.test
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests
+END
+test_lxml.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/test_lxml.py
+END
+test_builder_registry.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/test_builder_registry.py
+END
+test_tree.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/test_tree.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/__init__.py
+END
+test_html5lib.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/test_html5lib.py
+END
+test_htmlparser.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/test_htmlparser.py
+END
+test_soup.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/test_soup.py
+END
+test_docs.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/2293/stable/webapi/bs4/tests/test_docs.py
+END

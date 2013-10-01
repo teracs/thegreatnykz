@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww
+END
+ntw_foot.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/1961/test/fweb2/ntwww/ntw_foot.c
+END
+ntcore.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/ntwww/ntcore.h
+END
+ntw_login.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntw_login.c
+END
+ntc_board.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntc_board.h
+END
+ntc_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntc_utils.c
+END
+ntc_crypt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/ntwww/ntc_crypt.c
+END
+ntc_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntc_utils.h
+END
+ntc_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/ntwww/ntc_user.c
+END
+ntcinternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/ntwww/ntcinternal.h
+END
+ntc_mail.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntc_mail.c
+END
+nt.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sjtubbs/!svn/ver/1865/test/fweb2/ntwww/nt.h
+END
+ntwww.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/ntwww/ntwww.c
+END
+ntc_user.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntc_user.h
+END
+ntcore.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/ntwww/ntcore.c
+END
+ntc_mail.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntc_mail.h
+END
+ntc_board.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/2220/test/fweb2/ntwww/ntc_board.c
+END
+ntwww.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sjtubbs/!svn/ver/1950/test/fweb2/ntwww/ntwww.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1865/test/fweb2/ntwww/CMakeLists.txt
+END
+ntwtpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/1865/test/fweb2/ntwww/ntwtpl.h
+END

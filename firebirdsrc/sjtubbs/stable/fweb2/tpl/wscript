@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
+
+
+import Task
+import os
+import Utils
+from TaskGen import extension, feature, before, after, taskgen
+
+def __build_init():
+    cls = Task.simple_task_type('tpl2header', os.getcwd()+os.sep+'tpl/genheader2.sh ${SRC} ${TGT}', color='BLUE')
+
+    def tpl_hook(self, node):
+        task = self.create_task('tpl2header')
+        task.inputs = [node]
+        out =  node.change_ext('.tpl.h')
+        task.outputs = [ out ]
+        self.tpl_tasks.append(task)
+        return task
+    extension('.tpl')(tpl_hook)
+
+    def tpl_init(self):
+        self.tpl_tasks = []
+    taskgen( feature('tpl')( before('apply_core')( tpl_init)))
+
+    def tpl_use(self):
+        usetpl = getattr(self,'usetpl', '')
+        if not usetpl: return
+        tasks = getattr(self,'compiled_tasks', [])
+        if not tasks: return
+        tpl_names = Utils.to_list(usetpl)
+        for name in tpl_names:
+            tpl_gen = self.name_to_obj(name)
+            if not tpl_gen: 
+                raise Utils.WafError('unknown usetpl name "%s" in %s' % (name, self) )
+            for t in tasks:
+                for tpl in tpl_gen.tpl_tasks:
+                    t.set_run_after(tpl)
+    taskgen( feature('cc', 'cxx')( after('apply_core')( tpl_use)))
+
+def build(bld):
+    __build_init()
+    tpl_src = bld.path.ant_glob('*.tpl')
+    bld.new_task_gen(
+        name = 'tpl',
+        features = "tpl",
+        source = tpl_src
+    )
+    bld.install_files('${BBSHOME}/httpd/tpl', tpl_src)
+    

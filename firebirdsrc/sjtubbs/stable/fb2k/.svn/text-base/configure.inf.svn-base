@@ -1,0 +1,10 @@
+######################################################
+This file is generate by configure $Revision: 1.2 $
+######################################################
+PERL=/usr/bin/perl
+BBS_ID=SJTUBBS
+DOMAIN=bbs.sjtu.edu.cn
+CNAME=ÒûË®Ë¼Ô´
+DEFAULTBD=sysop
+BUILD_PLATFORM=linux
+LIBCRYPT=DES

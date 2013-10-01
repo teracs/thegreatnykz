@@ -1,0 +1,26 @@
+<html>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<link rel=stylesheet type=text/css href='/file/bbs/bbs.css'>
+<link rel=stylesheet type=text/css href='/file/bbs/blue.css'>
+<style type=text/css>
+A {color: #0000FF}
+</style>
+<script language="javascript">
+function gmsg()
+{
+	var msg = document.getElementById("gmsg");
+	if(msg.value=='y')
+	{
+		top.display_msg();
+	}
+	else
+	{
+		top.no_msg();
+	}
+}
+</script>
+<body>
+<div id='getmsgcontent'>
+</div>
+</body>
+</html>

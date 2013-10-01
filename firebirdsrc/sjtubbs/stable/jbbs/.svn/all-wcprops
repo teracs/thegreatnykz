@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/sjtubbs/!svn/ver/1720/stable/jbbs
+END
+jbbs.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sjtubbs/!svn/ver/1720/stable/jbbs/jbbs.c
+END
+log.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sjtubbs/!svn/ver/713/stable/jbbs/log.c
+END
+jbbs.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/772/stable/jbbs/jbbs.h
+END
+jbbs.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1659/stable/jbbs/jbbs.php
+END
+jbbs.i
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/773/stable/jbbs/jbbs.i
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sjtubbs/!svn/ver/713/stable/jbbs/log.h
+END
+shm.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/1708/stable/jbbs/shm.c
+END
+jbbs_wrap.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sjtubbs/!svn/ver/1659/stable/jbbs/jbbs_wrap.c
+END
+const.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/1708/stable/jbbs/const.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sjtubbs/!svn/ver/768/stable/jbbs/README
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sjtubbs/!svn/ver/1708/stable/jbbs/makefile
+END
+php_jbbs.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sjtubbs/!svn/ver/1659/stable/jbbs/php_jbbs.h
+END
+shm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sjtubbs/!svn/ver/713/stable/jbbs/shm.h
+END

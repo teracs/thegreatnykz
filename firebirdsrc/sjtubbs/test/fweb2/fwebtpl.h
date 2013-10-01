@@ -1,0 +1,370 @@
+#ifndef _H_FWEBTPL
+
+#define _H_FWEBTPL 
+
+#include <glib.h>
+#include <stdarg.h> /* for va_list */
+
+/**
+ * this file provide a C interface for C++ google-ctemplate library.
+ * please refer to http://code.google.com/p/google-ctemplate/ for template details.
+ *
+ * here is simple example:
+ * Tpl tpl;
+ * Tdict dict;
+ *
+ * dict = tdict_init("mydict");
+ * 
+ * tdict_set_value(dict, "NAME", "jawahh");
+ * tpl_load(&tpl, 'template_path');
+ * tpl_output(tpl, dict);
+ *
+ * tdict_final(dict);
+ *
+ * the template:
+ * Hello, {{NAME}}!
+ *
+ * NOTE:
+ * TemplateDictionary will dump a copy of all key and value you pass to it, and release it
+ * when you del the TemplateDictionary object. it means you can set key and value through 
+ * tdict_set_xxx interface, then immediately reuse or release the memory space of key and value
+ */
+
+G_BEGIN_DECLS
+/**
+ * initialize template subsystem
+ *
+ * @return TRUE on success, FALSE on error
+ */
+extern gboolean fwebtpl_init(void);
+
+/**
+ * TemPLate struct
+ * don't access internal struct outside fwebtpl.cc
+ */
+typedef struct {
+	void *tptr;  /* pointer to object of class Template */
+} Tpl;
+
+/**
+ * Template DICTionary struct
+ * don't access inernal struct outside fwebtpl.cc
+ */
+typedef struct {
+	void *dptr;  /* pointer to object of class TemplateDictionary */
+} Tdict;
+
+/**
+ * escape flag, for escape special char in template generating
+ *
+ * @see tdict_set_value_esc
+ * @see tdict_set_value_len_esc
+ * @see tdict_set_fmt_value_esc
+ */
+typedef enum _ESCAPE {
+	ESC_NONE, /* don't escape */
+	ESC_HTML, /* escape HTML special chars */
+	ESC_XML, /* escape XML special chars */
+	ESC_JS, /* escape JS special chars */
+	ESC_JSON /* escape JSON special chars */
+} ESCAPE;
+
+/**
+ * loading a template from cache.
+ * there is no unloading/final function for template, it will
+ * be cached in all program life until caught SIGUSR1, which 
+ * causes all templates being reloaded from disk files.
+ * 
+ * @param ptpl OUT: the result template 
+ * @param tpl_fn template file name
+ *
+ * @return TRUE on success, FALSE on error
+ */
+extern gboolean tpl_load(Tpl *ptpl, const char *tpl_fn);
+
+/**
+ * render a tpl with dict and write it out to http server
+ * 
+ * @param tpl the template
+ * @param dict the dictionary
+ *
+ * @return num bytes has written
+ */
+extern size_t tpl_output (Tpl tpl, Tdict dict);
+
+/**
+ * loading default error template, and render it to http server
+ * BE CAREFUL: you should send appropriate http headers first
+ *
+ * @param fmt printf like format string
+ *
+ * @return TRUE on success, FALSE on error
+ */
+extern gboolean tpl_print_err(const char *fmt, ...)
+	G_GNUC_PRINTF(1,2);
+
+/**
+ * create a new Tdict
+ *
+ * @param name the name of the dict, only useful for debug output
+ *
+ * @return the new Tdict
+ */
+extern Tdict tdict_init(const char *name);
+
+/**
+ * finalize the Tdict pointed by pdict, and the sub-Tdicts will be finalized, too.
+ * you should call it only at the top Tdict. other sub-Tdicts created by tdict_add_include
+ * and tdict_add_sec will be finalized automatically.
+ * 
+ * @param dict pointer to Tdict
+ */
+extern void tdict_final(Tdict dict);
+
+
+/**
+ * set key of dict to value 'val', and the value is
+ * escaped as esc defined
+ * 
+ * @dict the Tdict to be set
+ * @key the key
+ * @val the val
+ * @int vallen the lenght of val, in bytes
+ * @esc esc how to escape the value
+ *
+ * @see ESCAPE
+ * @see tdict_set_value
+ * @see tdict_set_value_esc
+ * @see tdict_set_value_len
+ */
+extern void tdict_set_value_len_esc(Tdict dict,
+	const char *key, const char *val, int vallen, ESCAPE esc);
+
+/**
+ * convenient function of tdict_set_value_len_esc
+ * just as tdict_set_value_len_sec(dict,key,val,strlen(val),ESC_NONE)
+ *
+ * @see tdict_set_value_len_esc
+ */
+extern void tdict_set_value(Tdict dict, 
+	const char *key, const char *val);
+
+/**
+ * convenient function of tdict_set_value_len_esc
+ * just as tdict_set_value_len_sec(dict,key,val,strlen(val),esc)
+ *
+ * @see tdict_set_value_len_esc
+ */
+extern void tdict_set_value_esc(Tdict dict,
+	const char *key, const char *val, ESCAPE esc);
+
+/**
+ * convenient function of tdict_set_value_len_esc
+ * just as tdict_set_value_len_sec(dict,key,val,vallen,ESC_NONE)
+ *
+ * @see tdict_set_value_len_esc
+ */
+extern void tdict_set_value_len(Tdict dict,
+	const char *key, const char *val, int vallen);
+
+/**
+ * convenient function of tdict_set_fmt_value
+ * just as tdict_set_fmt_value(dict, key, "%d", val)
+ *
+ * @see tdict_set_fmt_value
+ * @see tdict_set_uint_value
+ */
+extern void tdict_set_int_value(Tdict dict,
+	const char *key, int val);
+
+/**
+ * convenient function of tdict_set_fmt_value
+ * just as tdict_set_fmt_value(dict, key, "%ud", val)
+ *
+ * @see tdict_set_fmt_value
+ * @see tdict_set_int_value
+ */
+extern void tdict_set_uint_value(Tdict dict, const char *key, unsigned int val);
+/**
+ * set key of dict to value, which is generated by printf like format fmt,
+ * and escape the value as esc defined
+ * 
+ * @param dict the dict
+ * @param key key name
+ * @param esc how to escape the value
+ * @param fmt printf like format string
+ * 
+ * @see tdict_set_fmt_value
+ */
+extern void tdict_set_fmt_value_esc(Tdict dict,
+	const char *key, ESCAPE esc, const char *fmt, ...)
+	G_GNUC_PRINTF( 4, 5);
+/**
+ * convenient function of tdict_set_fmt_value_esc
+ * just as tdict_set_fmt_value_esc(dict, key, ESC_NONE, fmt, ...)
+ *
+ * @see tdict_set_fmt_value_esc
+ */
+extern void tdict_set_fmt_value(Tdict dict,
+	const char *key, const char *fmt, ...)
+	G_GNUC_PRINTF(3, 4);
+
+/**
+ * the va_list version of tdict_set_fmt_value
+ *
+ * @see tdict_set_fmt_value
+ */
+extern void tdict_set_fmtv_value(Tdict dict,
+	const char *key, const char *fmt, va_list ap);
+
+/**
+ * the va_list version of tdict_set_fmt_value_esc
+ *
+ * @see tdict_set_fmt_value_esc
+ */
+extern void tdict_set_fmtv_value_esc(Tdict dict,
+	const char *key, ESCAPE esc, const char *fmt, va_list ap);
+
+/**
+ * set the key of dict and its sub-Tdicts to val, no escaping in performed
+ *
+ * @param dict the dict
+ * @param key the key name
+ * @param val the value
+ * @param vallen the length of val, in bytes
+ *
+ * @see tdict_set_gbl_value
+ */
+extern void tdict_set_gbl_value_len(Tdict dict,
+	const char *key, const char *val, int vallen);
+/**
+ * convenient function of tdict_set_gbl_value_len
+ * just as tdict_set_gbl_value_len(dict, key, val, strlen(val))
+ */
+extern void tdict_set_gbl_value(Tdict dict,
+	const char *key, const char *val);
+/**
+ * set key of global dict to val, it will affect all Tdict
+ *
+ * @param key the key name
+ * @param val the value
+ * @param vallen the length of val
+ *
+ * @see tdict_set_all_gbl_value
+ */
+extern void tdict_set_all_gbl_value_len(
+	const char *key, const char *val, int vallen);
+
+/**
+ * convenient function of tdict_set_all_gbl_value_len
+ * just as tdict_set_all_gbl_value_len(key,val,strlen(val))
+ *
+ * @see tdict_set_all_gbl_value_len
+ */
+extern void tdict_set_all_gbl_value(
+	const char *key, const char *val);
+
+/**
+ * show section sec and return the new sub-section-dict.
+ * you can add multiple times to one section. after rendering,
+ * the section will show as many times as you add. you can
+ * set diffrent key-value to new sub-section-dict to show
+ * diffrent content in each time the section shows.
+ * you must NOT call tdict_final to sub-section-dict
+ *
+ * @param dict the parent dict
+ * @param sec the section name
+ *
+ * @return the new sub-section-dict
+ *
+ * @see tdict_show_sec
+ * @see tdict_show_sec_value
+ * @see tdict_show_sec_value_len
+ * @see tdict_show_sec_value_esc
+ * @see tdict_show_sec_value_esc_len
+ */
+extern Tdict tdict_add_sec(Tdict dict, const char *sec);
+
+/**
+ * just as tdict_add_sec(dict, sec) and throw the sub-section-dict away,
+ * but more efficient.
+ *
+ * @see tdict_add_sec
+ */
+extern void  tdict_show_sec(Tdict dict, const char *sec);
+
+/**
+ * just as:
+ * Tdict subdict = tdict_add_sec(dict, sec);
+ * tdict_set_value_len_esc(subdict, key, val, vallen, esc);
+ */
+extern void tdict_show_sec_value_len_esc(Tdict dict,
+	const char *sec, const char *key, const char *val, int vallen, ESCAPE esc);
+
+/**
+ * just as:
+ * Tdict subdict = tdict_add_sec(dict, sec);
+ * tdict_set_value(subdict, key, val);
+ */
+extern void tdict_show_sec_value(Tdict dict, 
+	const char *sec, const char *key, const char *val);
+
+/**
+ * just as:
+ * Tdict subdict = tdict_add_sec(dict, sec);
+ * tdict_set_value_len(subdict, key, val, vallen);
+ */
+extern void tdict_show_sec_value_len(Tdict dict,
+	const char *sec, const char *key, const char *val, int vallen);
+
+/**
+ * just as:
+ * Tdict subdict = tdict_add_sec(dict, sec);
+ * tdict_set_value_esc(key, val, esc);
+ */
+extern void tdict_show_sec_value_esc(Tdict dict,
+	const char *sec, const char *key, const char *val, ESCAPE esc);
+
+/**
+ * include template 'filename' and return the new sub-include-dict
+ * 
+ * @param dict the parent dict
+ * @param name the name of the include
+ * @param filename the to be included template filename
+ *
+ * @return the new sub-include-dict
+ */
+extern Tdict tdict_add_include(Tdict dict, 
+	const char *name, const char *filename);
+
+
+/**
+ * debug functions for template
+ */
+
+/**
+ * if annotate is TRUE, it will show more debug infomations in output
+ * while rending dict
+ * if annotate is FALSE, it will set debug output off
+ * default is FASLE
+ *
+ * @param dict the dict
+ * @param annotate if it should show debug infomations
+ */
+ /* ctemplate ver 0.90 doesn't support it
+extern void tdict_set_annotate(Tdict dict, gboolean annotate);
+*/
+
+/**
+ * dump the native content of dict to http server
+ *
+ * @param dict the dict
+ */
+extern void tdict_dump(Tdict dict);
+
+
+G_END_DECLS
+
+#endif 
+/* end _H_FWEBTPL*/
+

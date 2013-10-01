@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src
+END
+CleanID.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/CleanID.c
+END
+maintain.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/maintain.c
+END
+sendmsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/sendmsg.c
+END
+lottery.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/lottery.c
+END
+delete.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/delete.c
+END
+Install.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/Install.sh.in
+END
+idadmin.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/idadmin.c
+END
+Makefile.BBSD
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/Makefile.BBSD
+END
+bcache.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/bcache.c
+END
+announce.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/announce.c
+END
+bbs.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/bbs.c
+END
+io.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/io.c
+END
+friendtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/friendtest.c
+END
+term.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/term.c
+END
+comm_lists.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/comm_lists.c
+END
+bbsd.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/bbsd.c
+END
+bbsgopher.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/bbsgopher.c
+END
+read.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/read.c
+END
+bbsnet.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/bbsnet.c
+END
+vote.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/vote.c
+END
+screen.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/screen.c
+END
+.PASSWDS
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/.PASSWDS
+END
+register.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/register.c
+END
+admintool.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/admintool.c
+END
+modetype.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/modetype.c
+END
+sortdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/sortdir.c
+END
+userinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/userinfo.c
+END
+xyz.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/xyz.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/Makefile
+END
+Install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/Install.sh
+END
+bbsrf.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/bbsrf.c
+END
+bm.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/bm.c
+END
+postheader.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/postheader.c
+END
+more.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/more.c
+END
+pass.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/pass.c
+END
+thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/thread.c
+END
+namecomplete.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/namecomplete.c
+END
+boards.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/boards.c
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/list.c
+END
+record.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/record.c
+END
+chat.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/chat.c
+END
+readabc.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/readabc.c
+END
+station.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/station.c
+END
+mail.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/mail.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/main.c
+END
+edit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/edit.c
+END
+fileshm.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/fileshm.c
+END
+stuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/stuff.c
+END
+help.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/help.c
+END
+goodbye.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/goodbye.c
+END
+Makefile.BBSRF
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/Makefile.BBSRF
+END
+talk.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/talk.c
+END
+expire.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/268/branch/fleg/fb2k/src/expire.c
+END

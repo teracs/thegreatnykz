@@ -1,0 +1,407 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sjtubbs/!svn/ver/1757/beta/fb2k/util/innbbsd
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/Makefile.in
+END
+wildmat.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/wildmat.c
+END
+killspam.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/killspam.c
+END
+README.-0.50beta-5F
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/README.-0.50beta-5F
+END
+NOCEM.1
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/NOCEM.1
+END
+NOCEM.2
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/NOCEM.2
+END
+NOCEM.3
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/NOCEM.3
+END
+INSTALL.nocem
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/INSTALL.nocem
+END
+CHANGES.nocem
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/CHANGES.nocem
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1757/beta/fb2k/util/innbbsd/Makefile
+END
+qp_conv.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/qp_conv.c
+END
+r_port.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/r_port.c
+END
+rfc931.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/rfc931.c
+END
+connectsock.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/connectsock.c
+END
+clibrary.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/clibrary.h
+END
+makedbz.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/makedbz.c
+END
+dbztool.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/dbztool.c
+END
+ctlinnbbsd.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/ctlinnbbsd.c
+END
+his.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/his.c
+END
+bbslink.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/bbslink.c
+END
+ncmperm.bbs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/ncmperm.bbs
+END
+filter.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/filter.c
+END
+receive_article.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/receive_article.c
+END
+innbbsconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/innbbsconf.h
+END
+his.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/his.h
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/version.h
+END
+bbslib.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/bbslib.c
+END
+bbslib.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/bbslib.h
+END
+daemon.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/daemon.c
+END
+bbsnnrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/bbsnnrp.c
+END
+newsfeeds.bbs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/newsfeeds.bbs
+END
+hisconvert.in
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/hisconvert.in
+END
+daemon.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/daemon.h
+END
+innbbsd.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/innbbsd.c
+END
+dbzinnbbsd.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/dbzinnbbsd.c
+END
+dbz.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/dbz.c
+END
+port.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/port.c
+END
+nntp.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/nntp.h
+END
+innbbsd.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/innbbsd.h
+END
+dbz.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/dbz.h
+END
+README.antispam
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/README.antispam
+END
+COPYRIGHT.nocem
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/COPYRIGHT.nocem
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/CHANGES
+END
+README.PowerBBS
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/README.PowerBBS
+END
+nocem.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/nocem.c
+END
+pmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/pmain.c
+END
+nodelist.bbs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/nodelist.bbs
+END
+dbz_query_sample.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/dbz_query_sample.c
+END
+nocem.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/nocem.h
+END
+dbzserver.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/dbzserver.c
+END
+closeonexec.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/closeonexec.c
+END
+README.nocem
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/README.nocem
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/README
+END
+inntobbs.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/inntobbs.c
+END
+file.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/file.c
+END
+lang.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/lang.c
+END
+inndchannel.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/inndchannel.c
+END
+inntobbs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/inntobbs.h
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/TODO
+END
+TODO.nocem
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/TODO.nocem
+END
+lang.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/lang.h
+END
+mkhistory.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/mkhistory.c
+END
+parsdate.y
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/parsdate.y
+END
+README.PalmBBS
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/README.PalmBBS
+END
+echobbslib.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/echobbslib.c
+END
+externs.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/externs.h
+END
+FEATURES
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sjtubbs/!svn/ver/1755/beta/fb2k/util/innbbsd/FEATURES
+END

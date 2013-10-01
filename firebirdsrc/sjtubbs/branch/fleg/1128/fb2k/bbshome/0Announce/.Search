@@ -1,0 +1,8 @@
+bbslists: groups/GROUP_0/bbslists
+deleted: bms/deleted
+junk: sysops/groups/junk
+sysop: groups/GROUP_0/sysop
+syssecurity: sysop/groups/syssecurity
+vote: groups/GROUP_0/vote
+Bulletin: groups/GROUP_0/Bulletin
+message: groups/GROUP_0/message
