@@ -3,7 +3,7 @@ import sys
 import os
 import functions
 
-boardFolder	=	"/home/bbs/bbshome/boards/"
+boardFolder	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/boards/"
 
 def isKBoard(boardName):
 	return _hasAllowFile(boardName)
@@ -11,6 +11,10 @@ def isKBoard(boardName):
 def isInBoard(username, boardName):
 	return username in _getAllowList(boardName)
 
+def getAllowList(boardName):
+	if not _hasAllowFile(boardName):
+		return []
+	return _getAllowList(boardName)
 	
 def _hasAllowFile(boardName):
 	return os.path.exists( boardFolder + boardName + "/board.allow" )

@@ -4,14 +4,7 @@ import passwd,functions,PERM
 from includes import *
 
 class bbsallusers:
-    def GET(self,reqtype="html"):
-        users = []
-        userList = passwd.getUsers()
-        for u in userList:
-            users.append({
-                "userid":passwd.getAttr(u,"userid"),
-                "username":passwd.getAttr(u,"username"),
-                "gender":passwd.getAttr(u,"gender"),
-                "lastlogin":passwd.getAttr(u,"lastlogin"),
-                "lastlogout":passwd.getAttr(u,"lastlogout")})
+    def GET(self,reqtype="json"):
+        users = passwd.getAllUserAllInfo()
+        #ret = [{key:{"userid":key}} for key in users]
         return renderrouter({"message":users,"type":reqtype})

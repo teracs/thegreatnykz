@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+#coding=utf-8
 import web,sys
 
 import mimerender
@@ -15,14 +15,25 @@ from includes import *
 from bbsuser import bbsuser
 from bbsallusers import bbsallusers
 from bbscheck import bbscheck
+from bbspostindex import bbspostindex
+from bbspost import bbspost
 import bbslogin
-
+from bbsboard import *
 urls = (
 	'/bbsuser/(.*)\.(.*)','bbsuser',
 	'/bbsuser/(.*)','bbsuser',
 
-	'/bbsallusers\.(.*)','bbsallusers',
-	'/bbsallusers','bbsallusers',
+  '/bbsallusers\.(.*)','bbsallusers',
+  '/bbsallusers','bbsallusers',
+
+  '/bbsboard\.(.*)','bbsboard',
+  '/bbsboard','bbsboard',
+
+  '/bbspostindex\.(.*)','bbspostindex',
+  '/bbspostindex','bbspostindex',
+
+  '/bbspost\.(.*)','bbspost',
+  '/bbspost','bbspost',
 
 	'/bbslogin\.(.*)','bbslogin.bbslogin',
 	'/bbslogin','bbslogin.bbslogin',

@@ -14,7 +14,7 @@ import os
 import functions
 import re
 
-boardFolder	=	"/home/bbs/bbshome/boards/"
+boardFolder	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/boards/"
 
 def getPost(boardName,filename):
 	content = _getPostRaw(boardName,filename)

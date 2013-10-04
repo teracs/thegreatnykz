@@ -6,6 +6,7 @@
 #
 # getUsers() 				return a username list
 # getAttr(id,attr)			throws an error while not found
+# 因为我们是高富帅，所以请直接使用getAllUserAllInfo()
 #
 # _getIdFromBlock(block)	False while not found
 # _getBlockById(id)			False while not found
@@ -19,7 +20,7 @@ import sys,functions
 
 from PERM import *
 
-passwdfile	=	"/home/bbs/bbshome/.PASSWDS"
+passwdfile	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/.PASSWDS"
 whereischk	=	os.path.split(os.path.realpath(__file__))[0] + "/checkPasswd"
 structlen 	=	512
 maxidlen	=	14
@@ -47,6 +48,20 @@ def getAttr(id = "*#06#",attr = "*#06#"):
 	if attr not in i.keys():
 		return False
 	return i[attr]
+
+def getAllUserAllInfo():
+	u = "*#06#"
+	f = open(passwdfile,"rb")
+	users = {}
+	block = f.read(structlen)
+	while block:
+		userid = _getIdFromBlock(block)
+		if userid:
+			users[userid] = _getUserFullInfoFromBlock(block)
+		block = f.read(structlen)
+	f.close()
+	return users
+
 
 def checkPasswd(id="*#06#",password="*#06#"):
 	if not (id in getUsers()):

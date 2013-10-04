@@ -19,10 +19,11 @@ import struct
 import sys
 import os
 import functions
+import re
 
-boardFolder	=	"/home/bbs/bbshome/boards/"
+boardFolder	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/boards/"
 
-boardFilePath = "/home/bbs/bbshome/.BOARDS"
+boardFilePath = "/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/.BOARDS"
 #boardFilePath = os.getcwd()+"/BOARDS"
 BOARDSstruct =	["76s",		"i",		"20s",		"56s",	"3s",		"c",		"80s",		"I",		"12s"		]
 BOARDSorder =	["filename",	"group",	"owner",	"BM",	"flag2",	"flag",		"title",	"level",	"accessed"	]
@@ -37,6 +38,14 @@ def getBoards():
 				break
 		len(nm) and boards.append(nm)
 	return boards
+
+def getAllBoardAllInfo():
+	boardList = _getDetailedBoards()
+	ret = {}
+	for board in boardList:
+		if re.match("^[a-zA-Z0-9]*$",board['filename']):
+			ret[board['filename']] = board
+	return ret
 
 def getBoardAttr(boardName,attr):
 	detail = getBoardDetailed(boardName)

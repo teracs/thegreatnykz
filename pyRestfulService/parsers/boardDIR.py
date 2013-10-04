@@ -4,7 +4,7 @@ import os
 import functions
 import time
 
-boardFolder	=	"/home/bbs/bbshome/boards/"
+boardFolder	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/boards/"
 
 DIRstruct 	=	["80s",		"76s",		"I",	"80s",		"I",		"4s",		"I",	"I"		]
 order		=	["filename",	"owner",	"pnum",	"title",	"level",	"accessed",	"id",	"reid"	]

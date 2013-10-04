@@ -1,3 +1,4 @@
+#coding=utf-8
 import struct
 import re
 def parseStruct(lstruct,lorder,structsize,strin):
@@ -46,7 +47,10 @@ def filterCT(strin):
 	return clean
 
 def GBK2UTF(strin):
-	return strin.decode("GBK").encode("utf8")
+	try:
+		return strin.decode("GBK",'ignore').encode("utf8")
+	except:
+		return strin
 
 def GBK2UnicodeEscape(strin):
 	return strin.decode("GBK").encode("unicode_escape")
