@@ -8,6 +8,119 @@ function thegreatnykz_services_resources() {
 
   $resources['nykzuser'] = array('operations' => array(),'actions' => array(),);
   $resources['nykzboard'] = array('operations' => array(),'actions' => array(),);
+  $resources['nykzpost'] = array('operations' => array(),'actions' => array(),);
+
+  $resources['nykzuser']['actions']['login'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzuser',
+      ),
+    'callback' => '_handler_login',
+    'args' => array(
+      array(
+        'name' => 'userid',
+        'optional' => FALSE,
+        'source' => array('data' => 'userid'),
+        'type' => 'string',
+        ),
+      array(
+        'name' => 'password',
+        'optional' => FALSE,
+        'source' => array('data' => 'password'),
+        'type' => 'string',
+        ),
+      ),
+    'access arguments' => array('nykzlogin'),
+    );
+
+  $resources['nykzuser']['operations']['index'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzuser',
+      ),
+    'callback' => '_handler_nykzuser_index',
+    'access arguments' => array('nykzbasic'),
+    );
+
+  $resources['nykzboard']['operations']['index'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzboard',
+      ),
+    'callback' => '_handler_nykzboard_index',
+    'access arguments' => array('nykzbasic'),
+    );
+
+  $resources['nykzboard']['actions']['show'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzboard',
+      ),
+    'callback' => '_handler_nykzboard_show',
+    'args' => array(
+      array(
+        'name' => 'boardName',
+        'optional' => FALSE,
+        'source' => array('data' => 'boardName'),
+        'type' => 'string',
+        ),
+      array(
+        'name' => 'start',
+        'optional' => TRUE,
+        'source' => array('data' => 'password'),
+        'type' => 'int',
+        'default value' => 100000,
+        ),
+      array(
+        'name' => 'count',
+        'optional' => TRUE,
+        'source' => array('data' => 'count'),
+        'type' => 'int',
+        'default value' => 20,
+        ),
+      ),
+    'access callback' => '_access_nykzboard',
+    'access callback file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzboard',
+      ),
+    'access arguments append' => TRUE,
+    );
+
+  $resources['nykzpost']['actions']['show'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzpost',
+      ),
+    'callback' => '_handler_nykzpost_show',
+    'args' => array(
+      array(
+        'name' => 'boardName',
+        'optional' => FALSE,
+        'source' => array('data' => 'boardName'),
+        'type' => 'string',
+        ),
+      array(
+        'name' => 'filename',
+        'optional' => FALSE,
+        'source' => array('data' => 'filename'),
+        'type' => 'string',
+        ),
+      ),
+    'access callback' => '_access_nykzboard',
+    'access callback file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzboard',
+      ),
+    'access arguments append' => TRUE,
+    );
 
   return $resources;
 }
@@ -18,6 +131,10 @@ function thegreatnykz_permission() {
     'nykzbasic' => array(
       'title' => t('普通用户权限'),
       'description' => t('普通用户权限'),
+    ),
+    'nykzlogin' => array(
+      'title' => t('南阳客栈用户登陆权限'),
+      'description' => t('给匿名用户这个权限就好了。。。'),
     ),
   );
 }

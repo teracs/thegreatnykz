@@ -53,12 +53,12 @@ class NYKZpost{
   }
 }
 
-$__main__ = 1;
+$__main__ = 0;
 if($__main__){
   //print_r(NYKZuser::getAllUsers());
   //print_r(NYKZboard::getAllBoards());
   //$user = new NYKZuser('Teracs','bybicycl');
   //print_r($user->info);
   //print_r(NYKZboard::getPostIndex('NetHack'));
-  print_r(NYKZpost::getPost('NetHack','M.1374330501.A'));
+  //print_r(NYKZpost::getPost('NetHack','M.1374330501.A'));
 }
