@@ -9,6 +9,9 @@
     <!-- 进入板面 -->
     <ul data-role="listview" data-theme="d" data-filter="true" data-filter-reveal="true" data-filter-placeholder="进入板面">
       <li><a href="#" onclick='gotoBoard("NetHack")'>NetHack</a></li>
+      <li><a href="#" onclick='gotoBoard("sysop")'>sysop</a></li>
+      <li><a href="#" onclick='gotoBoard("NYKZXin")'>NYKZXin</a></li>
+      <li><a href="#" onclick='gotoBoard("NanYangKeZhan")'>NanYangKeZhan</a></li>
     </ul>
       <!-- panel content goes here -->
   </div><!-- /panel -->
