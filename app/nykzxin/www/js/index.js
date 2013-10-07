@@ -1,5 +1,5 @@
 var nykzuser;
-$("#btn_login").on("click",function(){
+$("body").on("click","#btn_login",function(){
   var d = $("#form_login").serializeJson();//{userid,password}
   nykzuser = new NYKZuser(d.userid,d.password);
   nykzuser.login(function(callback){

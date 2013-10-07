@@ -1,10 +1,10 @@
-<table data-role="table" id="table_board" data-mode="reflow" class="ui-responsive table-stroke">
+<table data-role="table" id="table_board" data-mode="columntoggle" class="ui-responsive table-stroke">
   <thead>
     <tr>
-      <th data-priority="1">序号</th>
-      <th data-priority="2">状态</th>
-      <th data-priority="3">作者</th>
-      <th data-priority="4">日期</th>
+      <th data-priority="2">序号</th>
+      <th data-priority="4">状态</th>
+      <th data-priority="1">作者</th>
+      <th data-priority="3">日期</th>
       <th data-priority="persist"><b>标题</b></th>
     </tr>
   </thead>

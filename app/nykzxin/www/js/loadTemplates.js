@@ -44,7 +44,7 @@ function renderBoard(board){
   var pageid = "page_" + new Date().getTime();
   board.returnpageid = pageid;
   var content = {
-    hasPannel:true,
+    hasPannel:false,
     pageid:pageid,
     header:board.board + " 板",
     content:tmpl.board(board),
