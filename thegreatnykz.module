@@ -71,7 +71,7 @@ function thegreatnykz_services_resources() {
       array(
         'name' => 'start',
         'optional' => TRUE,
-        'source' => array('data' => 'password'),
+        'source' => array('data' => 'start'),
         'type' => 'int',
         'default value' => 100000,
         ),

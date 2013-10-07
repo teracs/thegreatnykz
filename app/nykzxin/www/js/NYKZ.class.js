@@ -15,18 +15,24 @@ NYKZuser.prototype.setCSRFToken = function(callback){
   });
 }
 
+//是否登录通过用户的isloggedin判断
 NYKZuser.prototype.login = function(callback){
   var self = this;
   if(!callback) callback = function(){}
   self.setCSRFToken(function(){
     var req = {userid:self.userid,password:self.password};
     self.ajaxAutoFail("post",self.endpoint + "/nykzuser/login",req,function(drupaluser){
-      self.isloggedin = true;
-      self.drupaluser = drupaluser;
-      console.log("user " + drupaluser.name + " logged in");
-      self.setCSRFToken(function(){
+      if(drupaluser instanceof Array && !drupaluser[0]){
         callback();
-      });
+      }
+      else{
+        self.isloggedin = true;
+        self.drupaluser = drupaluser;
+        console.log("user " + drupaluser.name + " logged in");
+        self.setCSRFToken(function(){
+          callback();
+        });
+      }
     });
   });
 }
