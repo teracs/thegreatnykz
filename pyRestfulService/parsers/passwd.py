@@ -19,8 +19,9 @@ import struct,os
 import sys,functions
 
 from PERM import *
+import config
 
-passwdfile	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/.PASSWDS"
+passwdfile	=	config.dir_bbshome + "/.PASSWDS"
 whereischk	=	os.path.split(os.path.realpath(__file__))[0] + "/checkPasswd"
 structlen 	=	512
 maxidlen	=	14

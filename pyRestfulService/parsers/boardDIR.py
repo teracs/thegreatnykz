@@ -3,8 +3,8 @@ import sys
 import os
 import functions
 import time
-
-boardFolder	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/boards/"
+import config
+boardFolder	=	config.dir_bbshome + "/boards/"
 
 DIRstruct 	=	["80s",		"76s",		"I",	"80s",		"I",		"4s",		"I",	"I"		]
 order		=	["filename",	"owner",	"pnum",	"title",	"level",	"accessed",	"id",	"reid"	]

@@ -13,8 +13,8 @@ import sys
 import os
 import functions
 import re
-
-boardFolder	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/boards/"
+import config
+boardFolder	=	config.dir_bbshome + "/boards/"
 
 def getPost(boardName,filename):
 	content = _getPostRaw(boardName,filename)

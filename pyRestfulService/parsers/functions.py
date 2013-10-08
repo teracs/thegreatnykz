@@ -1,6 +1,7 @@
 #coding=utf-8
 import struct
 import re
+
 def parseStruct(lstruct,lorder,structsize,strin):
 	block = "*#06#"
 	itr = 0

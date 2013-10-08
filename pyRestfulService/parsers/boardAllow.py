@@ -2,8 +2,8 @@ import struct
 import sys
 import os
 import functions
-
-boardFolder	=	"/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/boards/"
+import config
+boardFolder	=	config.dir_bbshome + "/boards/"
 
 def isKBoard(boardName):
 	return _hasAllowFile(boardName)

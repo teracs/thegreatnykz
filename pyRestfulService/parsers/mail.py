@@ -5,9 +5,10 @@ import functions
 import passwd
 import json
 import time
+import config
 def getUnreadCount(user):
 	try:
-		f = open("/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/tmp/"+user+".mailsize","rb")
+		f = open(config.dir_bbshome + "/tmp/"+user+".mailsize","rb")
 		cnt = int(f.read())
 		f.close()
 	except:
@@ -16,7 +17,7 @@ def getUnreadCount(user):
 
 def setUnreadCount(user,cnt):
 	try:
-		f = open("/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/tmp/"+user+".mailsize","wb")
+		f = open(config.dir_bbshome + "/tmp/"+user+".mailsize","wb")
 		f.write(str(cnt))
 		f.close()
 	except:
@@ -34,11 +35,11 @@ def sendMail(idfrom,idto,title,content):
 	fileid = int(time.time())
 	while "M.%d.A"%fileid in getMailList(idto):
 		fileid +=1
-	f = open("/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/mail/%s/%s/%s/%s" \
+	f = open(config.dir_bbshome + "/mail/%s/%s/%s/%s" \
 		%(idto[0].upper(),idto[1].upper(),idto,"M.%d.A"%fileid), "wb")
 	f.write(content)
 	f.close()
-	f = open("../bbshome/mail/%s/%s/%s/.DIR"%(idto[0].upper(),idto[1].upper(),idto),"ab")
+	f = open(config.dir_bbshome + "/mail/%s/%s/%s/.DIR"%(idto[0].upper(),idto[1].upper(),idto),"ab")
 	ldata = ["M.%d.A"%fileid,"%s (%s)"%(idfrom,idfrom),0,title,0,"",fileid,fileid]
 	data = functions.packStruct(ldata,DIRstruct,256)
 	f.write(data)
@@ -48,7 +49,7 @@ def sendMail(idfrom,idto,title,content):
 	return dict(zip(order,ldata))
 
 def getMail(id,filename):
-	f = open("/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/mail/%s/%s/%s/%s" \
+	f = open(config.dir_bbshome + "/mail/%s/%s/%s/%s" \
 		%(id[0].upper(),id[1].upper(),id,filename), "rb")
 	content = f.read()
 	f.close()
@@ -56,7 +57,7 @@ def getMail(id,filename):
 
 def _getFileHeaders(id):
 	try:
-		f = open("/Users/dereklu/nykz/backup20130902/home/bbs/bbshome/mail/%s/%s/%s/.DIR"%(id[0].upper(),id[1].upper(),id),"rb")
+		f = open(config.dir_bbshome + "/mail/%s/%s/%s/.DIR"%(id[0].upper(),id[1].upper(),id),"rb")
 	#print boardFolder + boardName+ os.path.sep +".DIR"
 	except:
 		return []
