@@ -31,7 +31,10 @@ def getPostsList(boardName,startfrom1  = 999999,count = 20):
     return []
   data = functions.parseStruct(DIRstruct,order,256,data)
   f.close()
+  i = 0
   for thePost in data:
+    thePost["index"] = startfrom1 + i
+    i += 1
     endflag = thePost["filename"].find("\0")
     if endflag != -1:
       thePost["filename"] = thePost["filename"][0:endflag]
