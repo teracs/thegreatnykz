@@ -9,7 +9,6 @@ boardFolder	=	config.dir_bbshome + "/boards/"
 DIRstruct 	=	["80s",		"76s",		"I",	"80s",		"I",		"4s",		"I",	"I"		]
 order		=	["filename",	"owner",	"pnum",	"title",	"level",	"accessed",	"id",	"reid"	]
 
-
 def getPostsList(boardName):
 	return _getFileHeaders(boardName)
 
