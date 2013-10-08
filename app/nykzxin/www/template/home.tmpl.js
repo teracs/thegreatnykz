@@ -1,6 +1,6 @@
 <pre>
 
-你好，<%= drupaluser.name%>，这里是南阳客栈手机客户端……
+你好，<%= drupaluser.name%>，这里是南洋客栈手机客户端……
 
 作者是scaret
 

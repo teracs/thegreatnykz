@@ -21,9 +21,9 @@ $("body")
 var content = {
   hasPannel:true,
   pageid:"page_login",
-  header:"登陆-南阳客栈信",
+  header:"登陆-南洋客栈信",
   content:tmpl.login(),
-  footer:"<h1>南阳客栈信</h1>",
+  footer:"<h1>南洋客栈信</h1>",
 };
 $("#" + content.pageid).replaceWith(tmpl.base(content));
 
@@ -33,9 +33,9 @@ function renderHome(drupaluser){
   var content = {
     hasPannel:true,
     pageid:"page_home",
-    header:"主页-南阳客栈信",
+    header:"主页-南洋客栈信",
     content:tmpl.home({drupaluser:drupaluser}),
-    footer:"<h1>南阳客栈信</h1>",
+    footer:"<h1>南洋客栈信</h1>",
   };
   $("#" + content.pageid).replaceWith(tmpl.base(content));
 }
