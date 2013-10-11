@@ -49,7 +49,7 @@ def userIndex():
   users = []
   while block:
     id = _getIdFromBlock(block)
-    if id:
+    if id and id[0] != '\0':
       users.append(id)
     block = f.read(structlen)
   f.close()
@@ -78,7 +78,7 @@ def getAttr(id = "*#06#",attr = "*#06#"):
 
 # 检验用户密码是否正确。外部有一个c语言的可执行文件依赖。
 def checkPasswd(id="*#06#",password="*#06#"):
-  if not (id in getUsers()):
+  if not (_getBlockById(id)):
     return False
   encrypted = getAttr(id,"passwd")[-13:]
   cmd = whereischk +" '" + password[0:8] + "' " + encrypted

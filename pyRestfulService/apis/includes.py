@@ -55,11 +55,3 @@ errors = {
 
 	"require_id":{"no":2001,"error":"id is required"},
 }
-
-def checkPasswd():
-	web.header('content-type','text/html;charset=utf-8',unique=True)
-	data=web.input()
-	if "user" in data and "pw" in data:
-		return passwd.checkPasswd(data.user,data.pw)
-	else:
-		return False

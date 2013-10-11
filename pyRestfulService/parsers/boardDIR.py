@@ -71,14 +71,19 @@ def createPost(boardName,user,title,content,reid=False):
   filepath = "%s%s/%s/%s"%(boardFolder,boardName,str(fileid%500).zfill(3),"M."+str(fileid)+".A")
   print filepath
   f = open(filepath, "wb")
+  if isinstance(content,unicode):
+    try:
+      content = content.encode("GBK")
+    except:
+      pass
   f.write(content)
   f.close()
   f = open(boardFolder + boardName +"/.DIR","ab")
-  ldata = ["M.%d.A"%fileid,"%s"%(user,user),0,title,0,"",fileid,reid and reid or fileid]
+  ldata = ["M.%d.A"%fileid,user,0,title,0,"",fileid,reid and reid or fileid]
   data = functions.packStruct(ldata,DIRstruct,256)
   f.write(data)
   f.close()
-  return dict(zip(order,ldata))
+  return "M.%d.A"%fileid
 
 
 

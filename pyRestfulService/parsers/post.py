@@ -18,11 +18,7 @@ boardFolder	=	config.dir_bbshome + "/boards/"
 
 def getPost(boardName,filename):
 	content = _getPostRaw(boardName,filename)
-	return functions.GBK2UTF(content)
-
-def getPostNoCT(boardName,filename):
-	c = getPost(boardName,filename)
-	return functions.filterCT(c)
+	return functions.GBK2Unicode(content)
 
 def getPostNoCTEscape(boardName,filename):
 	c = _getPostRaw(boardName,filename)
@@ -42,7 +38,7 @@ def _getPostRaw(boardName,filename):
 def getPostNoCT(boardName,filename):
 	filename = filename[:14]
 	c = _getPostRaw(boardName,filename)
-	return functions.filterCT(c)
+	return functions.GBK2Unicode(functions.filterCT(c))
 
 
 def _getFileMapNum(filename):

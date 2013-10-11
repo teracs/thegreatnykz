@@ -14,11 +14,13 @@ sys.path.append("../servers")
 from includes import *
 from bbsuser import bbsuser
 from bbsallusers import bbsallusers
+from bbsuserindex import bbsuserindex
 from bbscheck import bbscheck
 from bbspostindex import bbspostindex
 from bbspost import bbspost
 import bbslogin
 from bbsboard import *
+from bbsboardindex import *
 urls = (
 	'/bbsuser/(.*)\.(.*)','bbsuser',
 	'/bbsuser/(.*)','bbsuser',
@@ -26,8 +28,14 @@ urls = (
   '/bbsallusers\.(.*)','bbsallusers',
   '/bbsallusers','bbsallusers',
 
+  '/bbsuserindex\.(.*)','bbsuserindex',
+  '/bbsuserindex','bbsuserindex',
+
   '/bbsboard\.(.*)','bbsboard',
   '/bbsboard','bbsboard',
+
+  '/bbsboardindex\.(.*)','bbsboardindex',
+  '/bbsboardindex','bbsboardindex',
 
   '/bbspostindex\.(.*)','bbspostindex',
   '/bbspostindex','bbspostindex',
@@ -38,14 +46,15 @@ urls = (
 	'/bbslogin\.(.*)','bbslogin.bbslogin',
 	'/bbslogin','bbslogin.bbslogin',
 
-	'/bbscheck.*','bbscheck',
+	'/bbscheck\.?(.+)?','bbscheck',
+
 	'(.*)', 'greet'
 )
 app = web.application(urls, globals())
 session = web.session.Session(app, web.session.DiskStore('sessions'), initializer={'id':'guest'})
 class greet:
     def GET(self, path):
-        return web.template.render('template/', cache=False).index(path)
+        return "Hello,World~ your path:" + path
 
 if __name__ == "__main__":
     app.run()

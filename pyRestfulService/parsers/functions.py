@@ -28,11 +28,7 @@ def parseStruct(lstruct,lorder,structsize,strin):
 
 def packStruct(ldata,lorder,structsize):
 	for i in range(len(ldata)):
-		if type(ldata[i]) == str:
-			try:
-				ldata[i] = ldata[i].decode("utf8")
-			except:
-				pass
+		if isinstance(ldata[i],unicode):
 			try:
 				ldata[i] = ldata[i].encode("GBK")
 			except:
@@ -41,7 +37,6 @@ def packStruct(ldata,lorder,structsize):
 	datastr = struct.pack(order,*ldata)
 	return datastr
 
-
 def filterCT(strin):
 	pattern = re.compile('\\033\[[0-9;]*[a-zA-Z]')
 	clean = pattern.sub('',strin)
@@ -49,12 +44,27 @@ def filterCT(strin):
 
 def GBK2UTF(strin):
 	try:
-		return strin.decode("GBK",'ignore').encode("utf8")
+		str =  strin.decode("GBK",'ignore')
+	except:
+		pass
+	if isinstance(str,unicode):
+		try:
+			str = str.encode("utf8")
+		except:
+			pass
+	return strin
+
+def UTF2GBK(strin):
+	try:
+		return strin.decode("utf8",'ignore').encode("GBK")
 	except:
 		return strin
 
 def GBK2UnicodeEscape(strin):
 	return strin.decode("GBK").encode("unicode_escape")
+
+def GBK2Unicode(strin):
+	return strin.decode("GBK")
 
 def prettyPrint(l,prefix=0,firstWithPrefix=False,linewidth=78,end=False):
 	ret = ""
