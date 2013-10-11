@@ -43,16 +43,17 @@ def filterCT(strin):
 	return clean
 
 def GBK2UTF(strin):
+	strout = strin
 	try:
-		str =  strin.decode("GBK",'ignore')
+		strout =  strin.decode("GBK",'ignore')
 	except:
 		pass
-	if isinstance(str,unicode):
+	if isinstance(strout,unicode):
 		try:
-			str = str.encode("utf8")
+			strout = strout.encode("utf8")
 		except:
 			pass
-	return strin
+	return strout
 
 def UTF2GBK(strin):
 	try:

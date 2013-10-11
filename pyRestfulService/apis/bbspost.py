@@ -12,8 +12,9 @@ class bbspost:
     postRaw = post.getPostNoCT(boardName,filename)
 
     return renderrouter({"message":postRaw,"type":'json'})
-  def POST(self):
+  def POST(self,reqtype):
     data= web.input(reid=False)
+    # print data
     ret = boardDIR.createPost(data.boardName,data.user,data.title,data.content,data.reid)
     # boardName,user,title,content,reid=False
-    return renderrouter({"message":ret,"type":'json'})
+    return renderrouter({"message":ret,"type":reqtype})

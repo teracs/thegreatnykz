@@ -43,6 +43,23 @@ function thegreatnykz_services_resources() {
     'callback' => '_handler_nykzuser_index',
     'access arguments' => array('nykzbasic'),
     );
+  $resources['nykzuser']['operations']['retrieve'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzuser',
+      ),
+    'callback' => '_handler_nykzuser_retrieve',
+    'args' => array(
+      array(
+        'name' => 'userid',
+        'optional' => FALSE,
+        'source' => array('path' => 0),
+        'type' => 'string',
+        ),
+    ),
+    'access arguments' => array('nykzbasic'),
+    );
 
   $resources['nykzboard']['operations']['index'] = array(
     'file' => array(
@@ -110,6 +127,47 @@ function thegreatnykz_services_resources() {
         'name' => 'filename',
         'optional' => FALSE,
         'source' => array('data' => 'filename'),
+        'type' => 'string',
+        ),
+      ),
+    'access callback' => '_access_nykzboard',
+    'access callback file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzboard',
+      ),
+    'access arguments append' => TRUE,
+    );
+  $resources['nykzpost']['actions']['create'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzpost',
+      ),
+    'callback' => '_handler_nykzpost_create',
+    'args' => array(
+      array(
+        'name' => 'boardName',
+        'optional' => FALSE,
+        'source' => array('data' => 'boardName'),
+        'type' => 'string',
+        ),
+      array(
+        'name' => 'title',
+        'optional' => FALSE,
+        'source' => array('data' => 'title'),
+        'type' => 'string',
+        ),
+      array(
+        'name' => 'content',
+        'optional' => FALSE,
+        'source' => array('data' => 'content'),
+        'type' => 'string',
+        ),
+      array(
+        'name' => 'reid',
+        'optional' => TRUE,
+        'source' => array('data' => 'reid'),
         'type' => 'string',
         ),
       ),

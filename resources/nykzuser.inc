@@ -21,11 +21,12 @@ function _handler_login($userid,$pw){
 // @返回所有南阳客栈用户列表
 function _handler_nykzuser_index(){
   $users = NYKZuser::getAllUsers();
-  return array_keys($users);
+  return $users;
 }
-
-
-
+function _handler_nykzuser_retrieve($userid){
+  $user = NYKZuser::getUser($userid);
+  return $user;
+}
 
 function _handler_register($userid,$pw){
   $roles = array();

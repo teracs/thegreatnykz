@@ -7,17 +7,13 @@ function _handler_nykzboard_index(){
 }
 
 function _handler_nykzboard_show($boardName,$start,$count){
-  $postIndexes = NYKZboard::getPostIndex($boardName);
+  $postIndexes = NYKZboard::getPostIndex($boardName,$start,$count);
   $postIndexes = $postIndexes["posts"];
-  $max = count($postIndexes) -1;
-  //return $max;
-  if($start > $max) $start = $max - $count;
-  if($start < 0) $start = 0;
   return array(
-    "posts" => array_slice($postIndexes, $start, $count),
+    "posts" => $postIndexes,
     "board" => $boardName,
-    "start" => $start,
-    "count" => $count,
+    "start" => $postIndexes[0]["index"],
+    "count" => count($postIndexes),
     );
 }
 

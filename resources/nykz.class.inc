@@ -4,19 +4,25 @@ class NYKZuser{
   // @return {teracs:{userid,teracs,...}...}
   public $info;
   public $userid;
+  // 返回所有的用户id
   static function getAllUsers(){
-    $users_json = file_get_contents("http://localhost:8080/bbsallusers");
+    $users_json = file_get_contents("http://localhost:8080/bbsuserindex");
     $users = json_decode($users_json,true);
     $users = $users['message'];
     if(!$users) throw new Exception("fail to call webservice");
     return $users;
   }
+  static function getUser($userid){
+    $user_json = file_get_contents("http://localhost:8080/bbsuser/".$userid);
+    $user = json_decode($user_json);
+    return $user;
+  }
+
   // true of false.
   static function checkPasswd($userid,$pw){
-    $check_json = file_get_contents("http://localhost:8080/bbscheck?user=$userid&pw=$pw");
+    $check_json = file_get_contents("http://localhost:8080/bbscheck.json?user=$userid&pw=$pw");
     $check = json_decode($check_json,true);
-    if($check['message']['userid']) return true;
-    else return false;
+    return (int)in_array($userid,array_keys($check['message']));
   }
 
   function __construct($userid){
@@ -33,9 +39,14 @@ class NYKZboard{
     if(!$boards) throw new Exception("fail to call webservice");
     return $boards;
   }
+  static function boardIndex(){
+    $boards_json = file_get_contents("http://localhost:8080/boardindex");
+    $boards = json_decode($boards_json);
+    return $boards;
+  }
   // @return {boardName:Nethack,posts:[...],allow:[]}
-  static function getPostIndex($boardName){
-    $posts_json = file_get_contents("http://localhost:8080/bbspostindex?boardName=$boardName");
+  static function getPostIndex($boardName,$startfrom1=999999,$count=20){
+    $posts_json = file_get_contents("http://localhost:8080/bbspostindex?boardName=$boardName&startfrom1=$startfrom1&count=$count");
     $posts = json_decode($posts_json,true);
     $posts = $posts['message'];
     if(!$posts) throw new Exception("fail to call webservice");
@@ -50,6 +61,27 @@ class NYKZpost{
     $post = $post['message'];
     if(!$post) throw new Exception("fail to call webservice");
     return $post;
+  }
+  static function createPost($boardName,$author,$title,$content,$reid=NULL){
+    $req = array(
+      'boardName' => $boardName,
+      'user' => $author,
+      'title' => $title,
+      'content' => $content,
+      'reid' => $reid,
+      );
+    $options = array(
+      'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'    => 'POST',
+        'content'   => http_build_query($req),
+        ),
+      );
+    $context  = stream_context_create($options);
+    // print_r($context);
+    $result_json = file_get_contents("http://localhost:8080/bbspost.json",false,$context);
+    $result = json_decode($result_json);
+    return $result->message;
   }
 }
 
