@@ -37,7 +37,7 @@ function renderHome(drupaluser){
     content:tmpl.home({drupaluser:drupaluser}),
     footer:"<h1>南洋客栈信</h1>",
   };
-  $("#" + content.pageid).replaceWith(tmpl.base(content));
+  return tmpl.base(content);
 }
 
 function renderBoard(board){

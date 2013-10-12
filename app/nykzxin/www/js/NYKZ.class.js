@@ -67,6 +67,9 @@ NYKZuser.prototype.boardIndex = function(callback){
       if(board.level){
         delete boards[boardName];
       }
+      else if(board.allow.length && !_.has(board.allow,this.userid)){
+        delete boards[boardName];
+      }
     });
     callback(boards);
   });

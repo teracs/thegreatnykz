@@ -4,8 +4,11 @@ $("body").on("click","#btn_login",function(){
   nykzuser = new NYKZuser(d.userid,d.password);
   nykzuser.login(function(callback){
     if(nykzuser.isloggedin){
-      renderHome(nykzuser.drupaluser);
-      $.mobile.changePage($("#page_home"));
+      nykzuser.boardIndex(function(boards){
+        window.boards = boards;
+        var content = renderHome(nykzuser.drupaluser);
+        pageStack.push(content);
+      });
     }
     else{
       alert("登录失败！");
