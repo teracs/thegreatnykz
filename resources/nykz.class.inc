@@ -15,7 +15,7 @@ class NYKZuser{
   static function getUser($userid){
     $user_json = file_get_contents("http://localhost:8080/bbsuser/".$userid);
     $user = json_decode($user_json);
-    return $user;
+    return $user->message;
   }
 
   // true of false.

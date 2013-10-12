@@ -15,7 +15,7 @@ NYKZuser.prototype.setCSRFToken = function(callback){
   });
 }
 
-//是否登录通过用户的isloggedin判断
+//callback没有参数
 NYKZuser.prototype.login = function(callback){
   var self = this;
   if(!callback) callback = function(){}
@@ -37,15 +37,7 @@ NYKZuser.prototype.login = function(callback){
   });
 }
 
-NYKZuser.prototype.boardIndex = function(callback){
-  var self = this;
-  if(!callback) callback = function(){};
-  self.ajaxAutoFail("get",self.endpoint + "/nykzboard",null,function(boards){
-    console.log(boards);
-    callback(boards);
-  });
-}
-
+//callback([username,username,username])
 NYKZuser.prototype.userIndex = function(callback){
   var self = this;
   if(!callback) callback = function(){};
@@ -55,6 +47,32 @@ NYKZuser.prototype.userIndex = function(callback){
   });
 }
 
+//callback({userid,username,gender...})
+NYKZuser.prototype.userGet = function(userid,callback){
+  var self = this;
+  if(!callback) callback = function(){};
+  self.ajaxAutoFail("get",self.endpoint + "/nykzuser/" + userid,null,function(user){
+    console.log(user[userid]);
+    callback(user[userid]);
+  });
+}
+
+//callback({boardName:{filename,title,allow,level...}}})
+NYKZuser.prototype.boardIndex = function(callback){
+  var self = this;
+  if(!callback) callback = function(){};
+  self.ajaxAutoFail("get",self.endpoint + "/nykzboard",null,function(boards){
+    console.log(boards);
+    _.each(boards,function(board,boardName){
+      if(board.level){
+        delete boards[boardName];
+      }
+    });
+    callback(boards);
+  });
+}
+
+//callback({board,start,posts[{title,filename,owner,id,reid...}...]});
 NYKZuser.prototype.showBoard = function(boardName,start,callback){
   var self = this;
   if(!callback) callback = function(){};
@@ -68,6 +86,7 @@ NYKZuser.prototype.showBoard = function(boardName,start,callback){
   });
 }
 
+//callback({boardName,filename,post})
 NYKZuser.prototype.showPost = function(boardName,filename,callback){
   var self = this;
   if(!callback) callback = function(){};
@@ -76,6 +95,23 @@ NYKZuser.prototype.showPost = function(boardName,filename,callback){
     filename:filename,
   };
   self.ajaxAutoFail("post",self.endpoint + "/nykzpost/show",req,function(post){
+    console.log(post);
+    callback(post);
+  });
+}
+
+//callback({boardName,filename,post})
+NYKZuser.prototype.createPost = function(boardName,title,content,reid,callback){
+  var self = this;
+  if(!callback) callback = function(){};
+  if(!reid) reid=null;
+  var req = {
+    boardName:boardName,
+    title:title,
+    content:content,
+    reid:reid
+  };
+  self.ajaxAutoFail("post",self.endpoint + "/nykzpost/create",req,function(post){
     console.log(post);
     callback(post);
   });
