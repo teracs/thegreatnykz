@@ -117,16 +117,20 @@ NYKZuser.prototype.createPost = function(boardName,title,content,reid,callback){
   });
 }
 
+//如果有onAjaxAutoFailStart和onAjaxAutoFailStop，则会调用
 NYKZuser.prototype.ajaxAutoFail = function(method, url, data, callback,recursive){
   var self = this;
+  if(typeof onAjaxAutoFailStart == "function") onAjaxAutoFailStart();
   $.ajax({
     url: url,
     type: method,
     data : data? JSON.stringify(data):data,
     contentType: "application/json; charset=utf-8",
   }).success(function(data,statustext,xhr){
+    if(typeof onAjaxAutoFailStop == "function") onAjaxAutoFailStop();
     callback(data,xhr);
   }).fail(function(xhr,statustext,description){
+    if(typeof onAjaxAutoFailStop == "function") onAjaxAutoFailStop();
     if(description.search("CSRF")!= -1 && !recursive){
       self.setCSRFToken(function(){
         self.ajaxAutoFail(method, url, data, callback, true);

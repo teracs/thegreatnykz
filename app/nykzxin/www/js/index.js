@@ -28,3 +28,11 @@ function gotoPost(boardName,filename,returnpageid){
     $.mobile.changePage( "#" + dialogid);
   });
 }
+
+function onAjaxAutoFailStart(){
+  $.mobile.loading( "show" );
+}
+
+function onAjaxAutoFailStop(){
+  $.mobile.loading( "hide" );
+}
