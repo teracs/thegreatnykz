@@ -1,7 +1,7 @@
 var nykzuser;
 $("body").on("click","#btn_login",function(){
   var d = $("#form_login").serializeJson();//{userid,password}
-  nykzuser = new NYKZuser(d.userid,d.password);
+  nykzuser = new NYKZuser(d.userid,d.password,"http://dev-nykz2.scaret.in");
   nykzuser.login(function(callback){
     if(nykzuser.isloggedin){
       nykzuser.boardIndex(function(boards){
@@ -18,17 +18,17 @@ $("body").on("click","#btn_login",function(){
 
 function gotoBoard(boardName,start){
     nykzuser.showBoard(boardName,start,function(posts){
-        var pageid = renderBoard(posts);
+        var content = renderBoard(posts);
         //$("#" + pageid).trigger("pagecreate");
-        $.mobile.changePage($("#" + pageid));
+        pageStack.push(content);
     });
 }
 
 function gotoPost(boardName,filename,returnpageid){
   nykzuser.showPost(boardName,filename,function(post){
-    var dialogid = renderPost(post,returnpageid);
-    console.log(dialogid);
-    $.mobile.changePage( "#" + dialogid);
+    var content = renderPost(post,returnpageid);
+    console.log(content);
+    pageStack.push(content);
   });
 }
 

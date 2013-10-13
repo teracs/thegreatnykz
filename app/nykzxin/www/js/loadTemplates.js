@@ -3,7 +3,7 @@ var tmpl = {
   'login': 'template/login.tmpl.js',
   'home': 'template/home.tmpl.js',
   'board': 'template/board.tmpl.js',
-  'post': 'template/post.dialog.tmpl.js',
+  'post': 'template/post.tmpl.js',
 }
 $.ajaxSetup({async:false});
 _.each(tmpl,function(url,id){
@@ -44,7 +44,7 @@ function renderBoard(board){
   var pageid = "page_" + new Date().getTime();
   board.returnpageid = pageid;
   var content = {
-    hasPannel:false,
+    hasPannel:true,
     pageid:pageid,
     header:board.board + " 板",
     content:tmpl.board(board),
@@ -52,20 +52,17 @@ function renderBoard(board){
     <a href="#" data-icon="arrow-u" onclick="gotoBoard(\'' + board.board + '\',' + (board.start-20) +')">上一页</a>\
     <a href="#" data-icon="arrow-d" onclick="gotoBoard(\'' + board.board + '\',' + (board.start+20) +')">下一页</a>',
   };
-  $("body").append(tmpl.base(content));
-  console.log("renderBoard:",board);
-  return content.pageid;
+  return tmpl.base(content);
 }
 
 function renderPost(post,returnpageid){
   var content = {
-    hasPannel:false,
-    pageid:"dialog_" + new Date().getTime(),
-    header:"阅读文章",
-    content:"<pre>" + post.post + "</pre>",
+    hasPannel:true,
+    pageid:"page_" + new Date().getTime(),
+    header:'<a href="#" data-icon="back" onclick="pageStack.pop(false)">返回</a><h1>' + post.boardName + "板</h1>",
+    content:"<pre style='word-wrap: break-word;'>" + post.post + "</pre>",
     footer:post.filename + " @ " + post.boardName,
     returnpage:returnpageid
   };
-  $("body").append(tmpl.post(content));
-  return content.pageid;
+  return tmpl.post(content);
 }

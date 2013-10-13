@@ -65,9 +65,11 @@ NYKZuser.prototype.boardIndex = function(callback){
     console.log(boards);
     _.each(boards,function(board,boardName){
       if(board.level){
+        console.log("level del",boardName);
         delete boards[boardName];
       }
-      else if(board.allow.length && !_.has(board.allow,this.userid)){
+      else if(board.allow.length && !_.contains(board.allow,self.userid)){
+        console.log("allow del",boardName,board.allow,self.userid);
         delete boards[boardName];
       }
     });

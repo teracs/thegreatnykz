@@ -30,7 +30,7 @@ pageStack.push = function(pagetext){
   return pageid;
 };
 pageStack.pop = function(){
-  if(pageStack.pageids.length -2) return false;
+  if(pageStack.pageids.length -2 < 0) return false;
   pageStack.historyItr = pageStack.pageids.length -2;
   var pageid = pageStack.pageids[pageStack.historyItr];
   var pageidToDelete = pageStack.pageids.pop();
