@@ -1,5 +1,5 @@
 NYKZuser = function(userid,password,host,path2endpoint){
-  this.host = host ? host : "http://dev-nykz.scaret.in";
+  this.host = host ? host : "http://dev-nykz4.scaret.in";
   this.path2endpoint = path2endpoint ? path2endpoint : "nykz";
   this.endpoint = this.host + '/' + this.path2endpoint;
   this.userid = userid;
