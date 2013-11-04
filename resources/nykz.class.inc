@@ -6,21 +6,21 @@ class NYKZuser{
   public $userid;
   // 返回所有的用户id
   static function getAllUsers(){
-    $users_json = file_get_contents("http://localhost:8080/bbsuserindex");
+    $users_json = file_get_contents("http://nykz.net:8084/bbsuserindex");
     $users = json_decode($users_json,true);
     $users = $users['message'];
     if(!$users) throw new Exception("fail to call webservice");
     return $users;
   }
   static function getUser($userid){
-    $user_json = file_get_contents("http://localhost:8080/bbsuser/".$userid);
+    $user_json = file_get_contents("http://nykz.net:8084/bbsuser/".$userid);
     $user = json_decode($user_json);
     return $user->message;
   }
 
   // true of false.
   static function checkPasswd($userid,$pw){
-    $check_json = file_get_contents("http://localhost:8080/bbscheck.json?user=$userid&pw=$pw");
+    $check_json = file_get_contents("http://nykz.net:8084/bbscheck.json?user=$userid&pw=$pw");
     $check = json_decode($check_json,true);
     return (int)in_array($userid,array_keys($check['message']));
   }
@@ -33,20 +33,20 @@ class NYKZuser{
 class NYKZboard{
   // @return {NetHack:{title,filename,allow}}
   static function getAllBoards(){
-    $boards_json = file_get_contents("http://localhost:8080/bbsboard");
+    $boards_json = file_get_contents("http://nykz.net:8084/bbsboard");
     $boards = json_decode($boards_json,true);
     $boards = $boards['message'];
     if(!$boards) throw new Exception("fail to call webservice");
     return $boards;
   }
   static function boardIndex(){
-    $boards_json = file_get_contents("http://localhost:8080/boardindex");
+    $boards_json = file_get_contents("http://nykz.net:8084/boardindex");
     $boards = json_decode($boards_json);
     return $boards;
   }
   // @return {boardName:Nethack,posts:[...],allow:[]}
   static function getPostIndex($boardName,$startfrom1=999999,$count=20){
-    $posts_json = file_get_contents("http://localhost:8080/bbspostindex?boardName=$boardName&startfrom1=$startfrom1&count=$count");
+    $posts_json = file_get_contents("http://nykz.net:8084/bbspostindex?boardName=$boardName&startfrom1=$startfrom1&count=$count");
     $posts = json_decode($posts_json,true);
     $posts = $posts['message'];
     if(!$posts) throw new Exception("fail to call webservice");
@@ -56,7 +56,7 @@ class NYKZboard{
 
 class NYKZpost{
   static function getPost($boardName,$filename){
-    $post_json = file_get_contents("http://localhost:8080/bbspost?boardName=$boardName&filename=$filename");
+    $post_json = file_get_contents("http://nykz.net:8084/bbspost?boardName=$boardName&filename=$filename");
     $post = json_decode($post_json,true);
     $post = $post['message'];
     if(!$post) throw new Exception("fail to call webservice");
@@ -79,7 +79,7 @@ class NYKZpost{
       );
     $context  = stream_context_create($options);
     // print_r($context);
-    $result_json = file_get_contents("http://localhost:8080/bbspost.json",false,$context);
+    $result_json = file_get_contents("http://nykz.net:8084/bbspost.json",false,$context);
     $result = json_decode($result_json);
     return $result->message;
   }
