@@ -17,7 +17,7 @@ function _handler_nykzpost_create($boardName,$title,$content,$reid=NULL){
   $the_content = "发信人：".$user->name."， 信区：".$boardName.
   "\n标  题：".$title.
   "\n发信站：南阳客栈BBS (".$time."), 来自南阳客栈信！".
-  "\n\n".$content."\n\n--\n\n\033[1;32m※ 来源:·南洋客栈信！·\033[m\n";
+  "\n\n".$content."\n\n--\n\n\033[1;32m※ 来源:南洋客栈信！\033[m\n";
   $res = NYKZpost::createPost($boardName,$user->name,$title,$the_content,$reid);
   return $res;
 }
