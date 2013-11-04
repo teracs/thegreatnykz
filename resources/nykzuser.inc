@@ -43,3 +43,11 @@ function _handler_register($userid,$pw){
   $account = user_save('',$fields);
   return $account;
 }
+
+function _handler_whoami(){
+  global $user;
+  return array(
+    'uid' => $user->uid,
+    'name' => $user->name
+    );
+}

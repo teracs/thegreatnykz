@@ -34,6 +34,16 @@ function thegreatnykz_services_resources() {
     'access arguments' => array('nykzlogin'),
     );
 
+  $resources['nykzuser']['actions']['whoami'] = array(
+    'file' => array(
+      'type' => 'inc',
+      'module' => 'thegreatnykz',
+      'name' => 'resources/nykzuser',
+      ),
+    'callback' => '_handler_whoami',
+    'access arguments' => array('nykzlogin'),
+    );
+
   $resources['nykzuser']['operations']['index'] = array(
     'file' => array(
       'type' => 'inc',
