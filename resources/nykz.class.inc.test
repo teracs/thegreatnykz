@@ -1,0 +1,7 @@
+<?php
+  require_once "nykz.class.inc";
+  $allusers = NYKZuser::getAllUsers();
+  print_r($allusers);
+
+  $passwd = NYKZuser::checkPasswd("Teracs","bybicycle");
+  print_r($passwd);
