@@ -56,7 +56,7 @@ def getMailList(id,startfrom1 = 99999, count = 20):
       thePost["filename"] = thePost["filename"][0:endflag]
   return data
 
-def sendMail(idfrom,idto,title,content):
+def sendMail(idfrom,idto,title,content,reid = 0):
   fileid = int(time.time())
   while "M.%d.A"%fileid in getMailList(idto):
     fileid +=1
@@ -65,7 +65,10 @@ def sendMail(idfrom,idto,title,content):
   f.write(content)
   f.close()
   f = open(config.dir_bbshome + "/mail/%s/%s/%s/.DIR"%(idto[0].upper(),idto[1].upper(),idto),"ab")
-  ldata = ["M.%d.A"%fileid,"%s (%s)"%(idfrom,idfrom),0,title,0,"",fileid,fileid]
+  if not reid:
+    reid = fileid
+  reid = int(reid)
+  ldata = ["M.%d.A"%fileid,"%s (%s)"%(idfrom,idfrom),0,title,0,"",fileid,reid]
   data = functions.packStruct(ldata,DIRstruct,256)
   f.write(data)
   f.close()

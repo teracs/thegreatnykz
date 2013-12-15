@@ -21,6 +21,7 @@ from bbspost import bbspost
 import bbslogin
 from bbsboard import *
 from bbsboardindex import *
+from bbsmail import *
 urls = (
 	'/bbsuser/(.*)\.(.*)','bbsuser',
 	'/bbsuser/(.*)','bbsuser',
@@ -42,6 +43,12 @@ urls = (
 
   '/bbspost\.(.*)','bbspost',
   '/bbspost','bbspost',
+
+  '/bbsmailindex\.(.*)','bbsmailindex',
+  '/bbsmailindex','bbsmailindex',
+
+  '/bbsmail\.(.*)','bbsmail',
+  '/bbsmail','bbsmail',
 
 	'/bbslogin\.(.*)','bbslogin.bbslogin',
 	'/bbslogin','bbslogin.bbslogin',
