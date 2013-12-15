@@ -38,10 +38,10 @@ def render_html(message):
 
 def renderrouter(d):
 	if "type" in d:
-		if d["type"] == "json":
-			return render_json(d)
-		else:
+		if d["type"] == "html":
 			return render_html(d)
+		else:
+			return render_json(d)
 	else:
 		return render_json(d)
 
