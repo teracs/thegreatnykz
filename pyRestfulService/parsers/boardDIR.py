@@ -79,7 +79,9 @@ def createPost(boardName,user,title,content,reid=False):
   f.write(content)
   f.close()
   f = open(boardFolder + boardName +"/.DIR","ab")
-  ldata = ["M.%d.A"%fileid,user,0,title,0,"",fileid,reid and reid or fileid]
+  if not reid:
+    reid = fileid
+  ldata = ["M.%d.A"%fileid,user,0,title,0,"",fileid,reid]
   data = functions.packStruct(ldata,DIRstruct,256)
   f.write(data)
   f.close()
