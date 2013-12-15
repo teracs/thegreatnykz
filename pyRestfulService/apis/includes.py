@@ -43,7 +43,7 @@ def renderrouter(d):
 		else:
 			return render_html(d)
 	else:
-		return render_html(d)
+		return render_json(d)
 
 
 
