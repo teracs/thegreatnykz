@@ -62,6 +62,11 @@ def sendMail(idfrom,idto,title,content,reid = 0):
     fileid +=1
   f = open(config.dir_bbshome + "/mail/%s/%s/%s/%s" \
     %(idto[0].upper(),idto[1].upper(),idto,"M.%d.A"%fileid), "wb")
+  if isinstance(content,unicode):
+    try:
+      content = content.encode("GBK")
+    except:
+      pass
   f.write(content)
   f.close()
   f = open(config.dir_bbshome + "/mail/%s/%s/%s/.DIR"%(idto[0].upper(),idto[1].upper(),idto),"ab")

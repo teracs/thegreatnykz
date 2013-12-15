@@ -36,5 +36,5 @@ class bbsmail:
     content = data.content
     reid = data.reid
     # print data
-    ret = mail.sendMail(data, userfrom, userto, title, content, reid)
+    ret = mail.sendMail(userfrom, userto, title, content, reid)
     return renderrouter({"message":ret,"type":reqtype})
