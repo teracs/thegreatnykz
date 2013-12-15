@@ -1,49 +1,0 @@
-10
-
-dir
-2346
-http://dev.sjtubbs.org/svn/sjtubbs/stable
-http://dev.sjtubbs.org/svn/sjtubbs
-
-
-
-2013-07-06T14:23:08.308784Z
-2346
-fixme
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-0529a24d-75e0-0310-8232-c6c9e3c4f022
-
-app
-dir
-
-jbbs
-dir
-
-service
-dir
-
-fb2k
-dir
-
-script
-dir
-
-fweb2
-dir
-
-webapi
-dir
-

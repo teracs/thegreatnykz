@@ -1,5 +1,0 @@
-openssl genrsa -o sub.sub.example.com.
-openssl req -new -key sub.sub.example.com.key -out sub.sub.example.com.csr
-openssl x509 -req -in sub.sub.example.com.csr -CA sub.example.com.crt -CAkey sub.example.com.key -CAcreateserial -out sub.sub.example.com.crt
-
-openssl req -new -x509 -key privkey.pem -out cacert.pem -days 1095
