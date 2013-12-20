@@ -9,7 +9,7 @@ class bbspost:
     boardName = web.input()['boardName']
     filename = web.input()['filename']
 
-    postRaw = post.getPostNoCT(boardName,filename)
+    postRaw = post.getPost(boardName,filename)
 
     return renderrouter({"message":postRaw,"type":'json'})
   def POST(self,reqtype):
