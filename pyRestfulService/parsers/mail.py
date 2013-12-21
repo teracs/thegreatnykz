@@ -41,6 +41,8 @@ def getMailList(id,startfrom1 = 99999, count = 20):
     return []
   if startfrom1 < 0 or startfrom1 > countMail(id):
     startfrom1 = countMail(id) - count +1
+  if startfrom1 < 1:
+    startfrom1 = 1
   data = f.read((startfrom1 - 1)* 256)
   data = f.read(count * 256)
   if not data:

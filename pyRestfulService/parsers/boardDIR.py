@@ -25,6 +25,8 @@ def getPostsList(boardName,startfrom1  = 999999,count = 20):
     return []
   if startfrom1 < 0 or startfrom1 > countPost(boardName):
     startfrom1 = countPost(boardName) - count +1
+  if startfrom1 < 1:
+    startfrom1 = 1
   data = f.read( (startfrom1 - 1) * 256 ) #放掉一些
   data = f.read( count * 256 )
   if not data:
